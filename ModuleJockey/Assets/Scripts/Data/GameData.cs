@@ -6,9 +6,21 @@ using System;
 public class GameData 
 {
     public int Currentscene;
+    public string playername;
+    public int[] player;
+    public int DMG;
     public GameData()
     {
-        Currentscene = 0;
+        
+        Currentscene = 10;
+        playername = "lmao";
+       
+
+    }
+    public void SetDMG(int amount) //takto sa prepisuje niako 
+    {
+        DMG = amount;
+        app.datamanager.SaveGame();
     }
     
 }

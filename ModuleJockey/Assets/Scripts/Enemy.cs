@@ -58,4 +58,11 @@ public class Enemy : MonoBehaviour
     {
         transform.Translate(Vector2.right * speed * Time.deltaTime);
     }
+    public void Test()
+    {
+        if(Input.GetKeyDown(KeyCode.P))
+        {
+            app.datamanager.gamedata.SetDMG(10); //volanie a prepisanie ulozenie premenej
+        }
+    }
 }

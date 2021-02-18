@@ -5,20 +5,44 @@ using UnityEngine.SceneManagement;
 
 public class Sceneloader : MonoBehaviour
 {
-    public Scene[] sceneAssets;
-    public int index;
+    private void Awake()
+    {
+        app.sceneloader = this;
+    }
     public void LoadScene(string scenename)
     {
-        SceneManager.LoadScene(scenename);
-        
+
+        StartCoroutine(LoadScenecorutine(scenename));
     }
-    public void Save()
+    public IEnumerator LoadScenecorutine(string scenename)
     {
-      
+        AsyncOperation async = SceneManager.LoadSceneAsync(scenename, LoadSceneMode.Additive);
+        async.allowSceneActivation = false;
+        while (async.isDone == false)
+        {
+            if(async.progress >= 0.9f && async.allowSceneActivation == false)
+            {
+                async.allowSceneActivation = true;
+                
+            }
+            yield return null;
+        }
+        SceneManager.SetActiveScene(SceneManager.GetSceneByName(scenename));
     }
-    public void Load()
+    public IEnumerator UnLoadScenecorutine(string scenename)
     {
-        
+        AsyncOperation async = SceneManager.UnloadSceneAsync(scenename);
+        while (async.isDone == false)
+        {
+            yield return null;
+        }
+       
     }
+    public void UnloadScene(string scenename)
+    {
+        StartCoroutine(UnLoadScenecorutine(scenename));
+    }
+  
+    
 
 }

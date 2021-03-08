@@ -5,9 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class Sceneloader : MonoBehaviour
 {
+    [SerializeField] Texture2D cursor;
+    [SerializeField] Texture2D cursorondown;
     private void Awake()
     {
         app.sceneloader = this;
+        Cursor.SetCursor(cursor, Vector2.zero, CursorMode.ForceSoftware);
     }
     public void LoadScene(string scenename)
     {
@@ -42,7 +45,8 @@ public class Sceneloader : MonoBehaviour
     {
         StartCoroutine(UnLoadScenecorutine(scenename));
     }
-  
-    
+ 
+
+
 
 }

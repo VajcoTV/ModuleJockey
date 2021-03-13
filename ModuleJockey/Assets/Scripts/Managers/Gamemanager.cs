@@ -41,4 +41,8 @@ public class Gamemanager : MonoBehaviour
     {
         ChangeScene("Layer1_level " + app.datamanager.gamedata.Currentscene, "Town");
     }
+    public void ReloadLevel()
+    {
+
+    }
 }

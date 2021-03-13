@@ -6,14 +6,14 @@ using System;
 public class GameData 
 {
     public int Currentscene;
-    public int DMG;
-    public int health;
-    public int Armor;
+    public float DMG;
+    public float maxhealth;
+    public float Armor;
     public GameData()
     {
-        health = 100;
+        maxhealth = 100;
         Currentscene = 10;
-        Armor = 0;
+        Armor = 0.5f;
 
     }
     public void SetDMG(int amount) //takto sa prepisuje niako 
@@ -21,18 +21,18 @@ public class GameData
         DMG = amount;
         app.datamanager.SaveGame();
     }
-    public void SetHealth(int amount)
+    public void SetHealth(float enemydemage)
     {
-       amount = amount - Armor;
-        if(amount < Armor)
-        {
-            health -= amount;
-        }
-        else
-        {
-            health -= amount;
-        }
-        app.datamanager.SaveGame();
+        float AR = enemydemage * Armor;
+        enemydemage -= AR;
+        maxhealth -= enemydemage;
+
+        //app.datamanager.SaveGame();
+
+    }
+    public void SetExp(int xp)
+    {
+
     }
     
 }

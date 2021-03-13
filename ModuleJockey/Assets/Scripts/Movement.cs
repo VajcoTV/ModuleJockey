@@ -15,16 +15,18 @@ public class Movement : MonoBehaviour
     private Vector3 LastVelocity = Vector3.zero;
     private int colliders = 0;
     private Transform transform;
-    [SerializeField] Animator animator;
+    private Animator animator;
     public float Health = 3;
     public bool ICanSwing;
     public bool canbehit;
     public bool canrun = true;
     public bool canjump = true;
+   
   
 
     void Start()
     {
+        animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         transform = GetComponent<Transform>();
     }
@@ -44,20 +46,27 @@ public class Movement : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Stena")
+        if (collision.gameObject.tag == "playercollider")
         {
             isGrounded = true;
         }
     }
     private void InputJump()
     {
-
-
         if (Input.GetKeyDown(KeyCode.W) && isGrounded || Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
-           // animator.SetTrigger("Jump");
+            animator.SetTrigger("Jump");
             isGrounded = false;
             Jump();
+        }
+        if (isGrounded)
+        {
+           
+            animator.SetBool("Down", false);
+        }else
+        {
+      
+            animator.SetBool("Down", true);
         }
 
     }
@@ -75,7 +84,7 @@ public class Movement : MonoBehaviour
             {
                 transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1, 1, 1));
             }
-           // animator.SetBool("InRun", true);
+            animator.SetBool("Run", true);
 
         }
         if (Input.GetAxis("Horizontal") != 0 && rb.velocity.x < 0f)
@@ -84,12 +93,12 @@ public class Movement : MonoBehaviour
             {
                 transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1, 1, 1));
             }
-            //animator.SetBool("InRun", true);
+            animator.SetBool("Run", true);
 
         }
         if (rb.velocity.x == 0f)
         {
-           // animator.SetBool("InRun", false);
+            animator.SetBool("Run", false);
         }
 
 

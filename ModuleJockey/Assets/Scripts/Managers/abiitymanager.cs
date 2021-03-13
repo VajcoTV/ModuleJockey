@@ -36,6 +36,7 @@ public class abiitymanager : MonoBehaviour
     {
         if(Input.GetKey(ability1) && isCooldown1 == false)
         {
+            app.datamanager.gamedata.SetHealth(20);
             isCooldown1 = true;
             image1.fillAmount = 1;
         }
@@ -53,6 +54,7 @@ public class abiitymanager : MonoBehaviour
     {
         if (Input.GetKey(ability2) && isCooldown2 == false)
         {
+            app.datamanager.gamedata.SetHealth(30);
             isCooldown2 = true;
             image2.fillAmount = 1;
         }
@@ -70,6 +72,7 @@ public class abiitymanager : MonoBehaviour
     {
         if (Input.GetKey(ability3) && isCooldown3 == false)
         {
+            app.datamanager.gamedata.SetHealth(5);
             isCooldown3 = true;
             image3.fillAmount = 1;
         }

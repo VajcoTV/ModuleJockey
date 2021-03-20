@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    StateMachine stateMachine = new StateMachine();
+    
     public float rotationspeed;
     public float raymax;
     public float speed;
@@ -17,14 +17,13 @@ public class Enemy : MonoBehaviour
     private void Start()
     {
         Physics2D.queriesStartInColliders = false;
-        stateMachine.ChangeState(new IdleState());
+       
         
     }
 
     void Update()
     {
         Gumba();
-        Test();
     }
     public void Gumba()
     {
@@ -72,13 +71,6 @@ public class Enemy : MonoBehaviour
 
         }
     }
-    public void Test()
-    {
-        if(Input.GetKeyDown(KeyCode.P))
-        {
-            app.datamanager.gamedata.SetDMG(10); //volanie a prepisanie ulozenie premenej
-            app.datamanager.gamedata.SetHealth(enemydamage);
-        }
-    }
+ 
     
 }

@@ -21,8 +21,12 @@ public class Movement : MonoBehaviour
     public bool canbehit;
     public bool canrun = true;
     public bool canjump = true;
-   
-  
+    public int noOfClicks = 0;
+    float lastClickedTime = 0;
+    public float maxComboDelay = 1.2f;
+
+
+
 
     void Start()
     {
@@ -34,7 +38,6 @@ public class Movement : MonoBehaviour
     {
         InputJump();
         Swing();
-
     }
     private void FixedUpdate()
     {
@@ -70,7 +73,6 @@ public class Movement : MonoBehaviour
         }
 
     }
-
     private void RightRun()
     {
 
@@ -106,16 +108,20 @@ public class Movement : MonoBehaviour
    
     public void Swing()
     {
-        if (enemy != null)
+        if (Time.time - lastClickedTime > maxComboDelay)
         {
-            if (Input.GetKeyDown(KeyCode.E) && Vector3.Distance(enemy.transform.position, transform.position) < 4f)
-            {
-                Debug.Log("ide swing");
-                animator.SetTrigger("Stab");
-                Destroy(enemy.gameObject, 1.5f);
-                // StartCoroutine(Destroythisguy());
+            noOfClicks = 0;
+        }
 
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            lastClickedTime = Time.time;
+            noOfClicks++;
+            if (noOfClicks == 1)
+            {
+                animator.SetBool("Attack1", true);
             }
+            noOfClicks = Mathf.Clamp(noOfClicks, 0, 3);
         }
     }
     public void turnoffplayer()
@@ -145,5 +151,38 @@ public class Movement : MonoBehaviour
 
             
         }
+    }
+    public void return1()
+    {
+        if (noOfClicks >= 2)
+        {
+            animator.SetBool("Attack2", true);
+        }
+        else
+        {
+            animator.SetBool("Attack1", false);
+            noOfClicks = 0;
+        }
+    }
+
+    public void return2()
+    {
+        if (noOfClicks >= 3)
+        {
+            animator.SetBool("Attack3", true);
+        }
+        else
+        {
+            animator.SetBool("Attack2", false);
+            noOfClicks = 0;
+        }
+    }
+
+    public void return3()
+    {
+        animator.SetBool("Attack1", false);
+        animator.SetBool("Attack2", false);
+        animator.SetBool("Attack3", false);
+        noOfClicks = 0;
     }
 }

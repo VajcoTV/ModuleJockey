@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class LevelGeneration : MonoBehaviour {
 
     public Transform[] startingPositions;
+    public GameObject player;
     public GameObject[] rooms; // index 0 --> closed, index 1 --> LR, index 2 --> LRB, index 3 --> LRT, index 4 --> LRBT
 
     private int direction;
@@ -25,6 +26,7 @@ public class LevelGeneration : MonoBehaviour {
         int randStartingPos = Random.Range(0, startingPositions.Length);
         transform.position = startingPositions[randStartingPos].position;
         Instantiate(rooms[1], transform.position, Quaternion.identity);
+        Instantiate(player, transform.position, Quaternion.identity);
 
         direction = Random.Range(1, 6);
     }

@@ -17,8 +17,8 @@ public class Enemy : MonoBehaviour
     private void Start()
     {
         Physics2D.queriesStartInColliders = false;
-       
-        
+        rb2D = GetComponent<Rigidbody2D>();
+
     }
 
     void Update()

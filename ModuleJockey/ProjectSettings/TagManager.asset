@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Stena
   - playercollider
+  - EnemyTag
   layers:
   - Default
   - TransparentFX

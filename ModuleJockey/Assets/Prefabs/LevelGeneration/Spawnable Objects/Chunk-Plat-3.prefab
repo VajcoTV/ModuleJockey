@@ -45,7 +45,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - {fileID: 1423072390093236980, guid: de4d5aed063d31a4d82b18dcaef0ca7d, type: 3}
-  - {fileID: 1265759502714698, guid: a624c5d2f04a61241b9f2a9002a7bf8f, type: 3}
 --- !u!1 &3685159226926819795
 GameObject:
   m_ObjectHideFlags: 0
@@ -91,7 +90,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - {fileID: 1423072390093236980, guid: de4d5aed063d31a4d82b18dcaef0ca7d, type: 3}
-  - {fileID: 1265759502714698, guid: a624c5d2f04a61241b9f2a9002a7bf8f, type: 3}
 --- !u!1 &3685159227201714933
 GameObject:
   m_ObjectHideFlags: 0

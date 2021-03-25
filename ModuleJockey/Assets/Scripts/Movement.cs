@@ -5,107 +5,102 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    [SerializeField] Enemy enemy;
+    //**new movement**//
+    [SerializeField] float hSpeed = 10f;
+    [SerializeField] float vSpeed = 6f;
+    Rigidbody2D rb2D;
+    public bool canMove = true;
+    bool facingRight = true;
+    [Range(0, 1.0f)]
+    [SerializeField] float movementSmooth = 0.5f;
+    private Vector3 velocity = Vector3.zero;
+    //**movement**//
     [SerializeField] float JumpForce;
     [SerializeField] float movement;
     [SerializeField] float movementSpeed;
-    [SerializeField] Rigidbody2D rb;
+    
     [SerializeField] bool isGrounded = true;
     private Vector3 targetVelocity;
     private Vector3 LastVelocity = Vector3.zero;
-    private int colliders = 0;
     private Transform transform;
+
+    //**Animator**//
     private Animator animator;
+
+    //**Health**//
     public float Health = 3;
-    public bool ICanSwing;
-    public bool canbehit;
-    public bool canrun = true;
-    public bool canjump = true;
+
+    //**Combo Attack**//
     public int noOfClicks = 0;
     float lastClickedTime = 0;
     public float maxComboDelay = 1.2f;
 
+    //**Dash**//
+    public float dashSpeed;
+    private float dashTime;
+    public float startDashTime;
+    private int direction;
+    private bool candash = true;
 
-
-
+    //Awake
+    void Awake()
+    {
+        rb2D = GetComponent<Rigidbody2D>();
+    }
+    //Start
     void Start()
     {
         animator = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody2D>();
         transform = GetComponent<Transform>();
+        dashTime = startDashTime;
     }
+    //Update
     void Update()
     {
-        InputJump();
         Swing();
     }
+    //FixedUpdate
     private void FixedUpdate()
     {
-        RightRun();
+        
+        Dash();
     }
-    private void Jump()
-    {
-        rb.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);
-    }
+    //OnCollisionEnter
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "playercollider")
         {
             isGrounded = true;
+            candash = true;
         }
     }
-    private void InputJump()
+    //Logic Behind the Run
+    public void Move(float hMove, float vMove, bool jump)
     {
-        if (Input.GetKeyDown(KeyCode.W) && isGrounded || Input.GetKeyDown(KeyCode.Space) && isGrounded)
+       if(canMove)
         {
-            animator.SetTrigger("Jump");
-            isGrounded = false;
-            Jump();
-        }
-        if (isGrounded)
-        {
+          
+            Vector3 targetVelocity = new Vector2(hMove * hSpeed, vMove * vSpeed);
+            rb2D.velocity = Vector3.SmoothDamp(rb2D.velocity, targetVelocity, ref velocity, movementSmooth);
+            if(hMove > 0 && !facingRight)
+            {
+                animator.SetBool("Run", true);
+                Flip();
+            }
+            else if(hMove < 0 && facingRight)
+            {
+                animator.SetBool("Run", true);
+                Flip();
+            }
            
-            animator.SetBool("Down", false);
-        }else
-        {
-      
-            animator.SetBool("Down", true);
         }
-
     }
-    private void RightRun()
+    public void Flip()
     {
-
-
-        movement = Input.GetAxis("Horizontal");
-        targetVelocity = new Vector3(movement * movementSpeed, rb.velocity.y);
-        rb.velocity = targetVelocity;
-        if (Input.GetAxis("Horizontal") != 0 && rb.velocity.x > 0f)
-        {
-            if (transform.localScale.x < 0f)
-            {
-                transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1, 1, 1));
-            }
-            animator.SetBool("Run", true);
-
-        }
-        if (Input.GetAxis("Horizontal") != 0 && rb.velocity.x < 0f)
-        {
-            if (transform.localScale.x > 0f)
-            {
-                transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1, 1, 1));
-            }
-            animator.SetBool("Run", true);
-
-        }
-        if (rb.velocity.x == 0f)
-        {
-            animator.SetBool("Run", false);
-        }
-
-
+        facingRight = !facingRight;
+            transform.Rotate(0, 180, 0);
     }
-   
+   //Logic Behind the Swing
     public void Swing()
     {
         if (Time.time - lastClickedTime > maxComboDelay)
@@ -124,34 +119,7 @@ public class Movement : MonoBehaviour
             noOfClicks = Mathf.Clamp(noOfClicks, 0, 3);
         }
     }
-    public void turnoffplayer()
-    {
-        canjump = false;
-        canrun = false;
-
-    }
-    public void turnonplayer()
-    {
-        canjump = true;
-        canrun = true;
-    }
-    public void Icantswing()
-    {
-        ICanSwing = true;
-    }
- 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Enemy"))
-        {
-            enemy = collision.GetComponentInParent<Enemy>();
-        }
-        if (collision.CompareTag("Player destroyer"))
-        {
-
-            
-        }
-    }
+    //Atack Stuff returning bools
     public void return1()
     {
         if (noOfClicks >= 2)
@@ -185,4 +153,44 @@ public class Movement : MonoBehaviour
         animator.SetBool("Attack3", false);
         noOfClicks = 0;
     }
+    //Dash
+    public void Dash()
+    {
+        if(direction == 0)
+        {
+            if(Input.GetKeyDown(KeyCode.LeftControl))
+            {
+                if(movement < 0)
+                {
+                    direction = 1;
+                }else if(movement > 0)
+                {
+                    direction = 2;
+                }
+            }
+        }
+        else
+        {
+            if(dashTime <= 0)
+            {
+                direction = 0;
+                dashTime = startDashTime;
+                rb2D.velocity = Vector2.zero;
+            }else
+            {
+                dashTime -= Time.deltaTime;
+                if(direction == 1 && candash)
+                {
+                    rb2D.velocity = Vector2.left * dashSpeed;
+                    candash = false;
+                }else if (direction == 2 && candash)
+                {
+                    rb2D.velocity = Vector2.right * dashSpeed;
+                    candash = false;
+                }
+            }
+        }
+    }
+
+    
 }

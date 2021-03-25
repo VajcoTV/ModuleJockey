@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 61198993895955238}
   m_Layer: 9
   m_Name: Tile1
-  m_TagString: Stena
+  m_TagString: playercollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

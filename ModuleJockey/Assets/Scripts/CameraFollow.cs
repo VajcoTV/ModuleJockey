@@ -5,15 +5,17 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour {
 
 	public Transform target;
+	Transform camtransform;
 
 	public float smoothSpeed;
-	public Vector3 offset;
+    private void Start()
+    {
+        camtransform = Camera.main.transform;
+    }
 
-	void LateUpdate(){
+    void LateUpdate(){
 
-		Vector3 desiredPosition = target.position + offset;
-		Vector3 smoothedPos = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
-		transform.position = smoothedPos;
+        camtransform.position = new Vector3(target.position.x, camtransform.position.y, camtransform.position.z);
 
 
 	}

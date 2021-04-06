@@ -5,100 +5,167 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    //**new movement**//
-    [SerializeField] float hSpeed = 10f;
-    [SerializeField] float vSpeed = 6f;
-    Rigidbody2D rb2D;
-    public bool canMove = true;
-    bool facingRight = true;
-    [Range(0, 1.0f)]
-    [SerializeField] float movementSmooth = 0.5f;
-    private Vector3 velocity = Vector3.zero;
-    //**movement**//
-    [SerializeField] float JumpForce;
-    [SerializeField] float movement;
-    [SerializeField] float movementSpeed;
-    
-    [SerializeField] bool isGrounded = true;
-    private Vector3 targetVelocity;
-    private Vector3 LastVelocity = Vector3.zero;
-    private Transform transform;
-
-    //**Animator**//
+    [Header("References")]
     private Animator animator;
-
-    //**Health**//
+    CharacterController controller;
+    [Header("Health")]
     public float Health = 3;
-
-    //**Combo Attack**//
+    [Header("Combo")]
     public int noOfClicks = 0;
     float lastClickedTime = 0;
     public float maxComboDelay = 1.2f;
+    [Header("Movement")]
+    Vector3 slopeNormal;
+    bool grounded;
+    float verticalVelocity;
+    [Header("Movement config")]
+    [SerializeField] float speedX = 5;
+    [SerializeField] float speedY = 5;
+    [SerializeField] float gravity = 0.25f;
+    [SerializeField] float jumpForce = 8.0f;
+    [SerializeField] float terminalVelocity = 5.0f;
+    [Header("Raycast")]
+    [SerializeField] float extremitiesOffset = 0.05f;
+    [SerializeField] float innerVerticalOffset = 0.25f;
+    [SerializeField] float distanceGrounded = 0.15f;
+    [SerializeField] float slopeThreshold = 0.55f;
 
-    //**Dash**//
-    public float dashSpeed;
-    private float dashTime;
-    public float startDashTime;
-    private int direction;
-    private bool candash = true;
 
     //Awake
     void Awake()
     {
-        rb2D = GetComponent<Rigidbody2D>();
+        controller = GetComponent<CharacterController>();
+        animator = GetComponent<Animator>();
     }
     //Start
     void Start()
     {
-        animator = GetComponent<Animator>();
-        transform = GetComponent<Transform>();
-        dashTime = startDashTime;
+        
     }
     //Update
-    void Update()
+    private void Update()
     {
         Swing();
+
+        Vector3 inputVector = PoolInput();
+        Vector3 moveVector = new Vector3(inputVector.x * speedX, 0, inputVector.y * speedY);
+        grounded = Grounded();
+       
+        if (grounded)
+        {
+            animator.SetTrigger("Down");
+            verticalVelocity = -1;
+
+
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                animator.SetTrigger("Jump");
+                verticalVelocity = jumpForce;
+                slopeNormal = Vector3.up;
+            }
+        }
+        else
+        {
+            verticalVelocity -= gravity;
+            slopeNormal = Vector3.up;
+            if (verticalVelocity < -terminalVelocity)
+                verticalVelocity = -terminalVelocity;
+        }
+        moveVector.y = verticalVelocity;
+        if (slopeNormal != Vector3.up) moveVector = FollowFloor(moveVector);
+        controller.Move(moveVector * Time.deltaTime);
+        float r = Input.GetAxisRaw("Horizontal");
+        float v = Input.GetAxisRaw("Vertical");
+        if (r + v == 0 && v != -1 && r != -1)
+        {
+            animator.SetBool("Run", false);
+        }
+        else
+        {
+            animator.SetBool("Run", true);
+        }
+        if (r < 0)
+        {
+            transform.eulerAngles = new Vector3(0, 180, 0);
+        }
+        else if (r > 0)
+        {
+            transform.eulerAngles = new Vector3(0, 0, 0);
+        }
     }
+
     //FixedUpdate
     private void FixedUpdate()
     {
-        
-        Dash();
+       
     }
+    private Vector3 PoolInput()
+    {
+        Vector3 r = default(Vector3);
+        r.x = Input.GetAxisRaw("Horizontal");
+        r.y = Input.GetAxisRaw("Vertical");
+        return (r.magnitude > 1) ? r.normalized : r;
+       
+    }
+    public bool Grounded()
+    {
+        if (verticalVelocity > 0)
+            return false;
+
+        float yRay = (controller.bounds.center.y - (controller.height * 0.5f)) // Bottom of the character controller
+                     + innerVerticalOffset;
+
+        RaycastHit hit;
+
+        // Mid
+        if (Physics.Raycast(new Vector3(controller.bounds.center.x, yRay, controller.bounds.center.z), -Vector3.up, out hit, innerVerticalOffset + distanceGrounded))
+        {
+            Debug.DrawRay(new Vector3(controller.bounds.center.x, yRay, controller.bounds.center.z), -Vector3.up * (innerVerticalOffset + distanceGrounded), Color.red);
+            slopeNormal = hit.normal;
+            return (slopeNormal.y > slopeThreshold) ? true : false;
+        }
+        // Front-Right
+        if (Physics.Raycast(new Vector3(controller.bounds.center.x + (controller.bounds.extents.x - extremitiesOffset), yRay, controller.bounds.center.z + (controller.bounds.extents.z - extremitiesOffset)), -Vector3.up, out hit, innerVerticalOffset + distanceGrounded))
+        {
+            slopeNormal = hit.normal;
+            return (slopeNormal.y > slopeThreshold) ? true : false;
+        }
+        // Front-Left
+        if (Physics.Raycast(new Vector3(controller.bounds.center.x - (controller.bounds.extents.x - extremitiesOffset), yRay, controller.bounds.center.z + (controller.bounds.extents.z - extremitiesOffset)), -Vector3.up, out hit, innerVerticalOffset + distanceGrounded))
+        {
+            slopeNormal = hit.normal;
+            return (slopeNormal.y > slopeThreshold) ? true : false;
+        }
+        // Back Right
+        if (Physics.Raycast(new Vector3(controller.bounds.center.x + (controller.bounds.extents.x - extremitiesOffset), yRay, controller.bounds.center.z - (controller.bounds.extents.z - extremitiesOffset)), -Vector3.up, out hit, innerVerticalOffset + distanceGrounded))
+        {
+            slopeNormal = hit.normal;
+            return (slopeNormal.y > slopeThreshold) ? true : false;
+        }
+        // Back Left
+        if (Physics.Raycast(new Vector3(controller.bounds.center.x - (controller.bounds.extents.x - extremitiesOffset), yRay, controller.bounds.center.z - (controller.bounds.extents.z - extremitiesOffset)), -Vector3.up, out hit, innerVerticalOffset + distanceGrounded))
+        {
+            slopeNormal = hit.normal;
+            return (slopeNormal.y > slopeThreshold) ? true : false;
+        }
+
+        return false;
+    }
+    private Vector3 FollowFloor(Vector3 moveVector)
+    {
+        Vector3 right = new Vector3(slopeNormal.y, -slopeNormal.x, 0).normalized;
+        Vector3 forward = new Vector3(0, -slopeNormal.z, slopeNormal.y).normalized;
+        return right * moveVector.x + forward * moveVector.z;
+    }
+
     //OnCollisionEnter
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "playercollider")
         {
-            isGrounded = true;
-            candash = true;
-        }
-    }
-    //Logic Behind the Run
-    public void Move(float hMove, float vMove, bool jump)
-    {
-       if(canMove)
-        {
-          
-            Vector3 targetVelocity = new Vector2(hMove * hSpeed, vMove * vSpeed);
-            rb2D.velocity = Vector3.SmoothDamp(rb2D.velocity, targetVelocity, ref velocity, movementSmooth);
-            if(hMove > 0 && !facingRight)
-            {
-                animator.SetBool("Run", true);
-                Flip();
-            }
-            else if(hMove < 0 && facingRight)
-            {
-                animator.SetBool("Run", true);
-                Flip();
-            }
+            
            
         }
-    }
-    public void Flip()
-    {
-        facingRight = !facingRight;
-            transform.Rotate(0, 180, 0);
     }
    //Logic Behind the Swing
     public void Swing()
@@ -153,44 +220,7 @@ public class Movement : MonoBehaviour
         animator.SetBool("Attack3", false);
         noOfClicks = 0;
     }
-    //Dash
-    public void Dash()
-    {
-        if(direction == 0)
-        {
-            if(Input.GetKeyDown(KeyCode.LeftControl))
-            {
-                if(movement < 0)
-                {
-                    direction = 1;
-                }else if(movement > 0)
-                {
-                    direction = 2;
-                }
-            }
-        }
-        else
-        {
-            if(dashTime <= 0)
-            {
-                direction = 0;
-                dashTime = startDashTime;
-                rb2D.velocity = Vector2.zero;
-            }else
-            {
-                dashTime -= Time.deltaTime;
-                if(direction == 1 && candash)
-                {
-                    rb2D.velocity = Vector2.left * dashSpeed;
-                    candash = false;
-                }else if (direction == 2 && candash)
-                {
-                    rb2D.velocity = Vector2.right * dashSpeed;
-                    candash = false;
-                }
-            }
-        }
-    }
+   
 
     
 }

@@ -34,8 +34,11 @@ public class Movement : MonoBehaviour
     //Awake
     void Awake()
     {
+
         controller = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
+        SwitchManager.NormalSwitch += PlayerNormalDimensionSwitch;
+        SwitchManager.MagicSwitch += PlayerMagicDimensionSwitch;
     }
     //Start
     void Start()
@@ -50,10 +53,11 @@ public class Movement : MonoBehaviour
         Vector3 inputVector = PoolInput();
         Vector3 moveVector = new Vector3(inputVector.x * speedX, 0, inputVector.y * speedY);
         grounded = Grounded();
-       
+        animator.SetBool("Down", grounded);
         if (grounded)
         {
-            animator.SetTrigger("Down");
+            
+
             verticalVelocity = -1;
 
 
@@ -116,6 +120,7 @@ public class Movement : MonoBehaviour
                      + innerVerticalOffset;
 
         RaycastHit hit;
+       
 
         // Mid
         if (Physics.Raycast(new Vector3(controller.bounds.center.x, yRay, controller.bounds.center.z), -Vector3.up, out hit, innerVerticalOffset + distanceGrounded))
@@ -219,6 +224,15 @@ public class Movement : MonoBehaviour
         animator.SetBool("Attack2", false);
         animator.SetBool("Attack3", false);
         noOfClicks = 0;
+    }
+    public void PlayerNormalDimensionSwitch()
+    {
+        Debug.Log("Normalna dimenzia");
+
+    }
+    public void PlayerMagicDimensionSwitch()
+    {
+        Debug.Log("Magic dimenzia");
     }
    
 

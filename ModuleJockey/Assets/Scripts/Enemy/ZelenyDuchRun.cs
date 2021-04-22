@@ -23,10 +23,24 @@ public class ZelenyDuchRun : StateMachineBehaviour
         Vector3 target = new Vector3(player.position.x,player.position.y, player.position.z);
         Vector3 newpos = Vector3.MoveTowards(rb.position, target, speed * Time.deltaTime);
         rb.MovePosition(newpos);
-        if(Vector3.Distance(player.transform.position, enemy.transform.position) < 4f)
+        if(Vector3.Distance(player.transform.position, enemy.transform.position) < 1f)
         {
             animator.SetTrigger("Attack");
         }
+        if(Vector3.Distance(player.transform.position, enemy.transform.position) > 10f)
+        {
+            animator.SetBool("Run", false);
+        }
+
+        if(player.position.x < enemy.position.x)
+        {
+            enemy.eulerAngles =  new Vector3(0, 0, 0);
+        }
+        else if (player.position.x > enemy.position.x)
+        {
+            enemy.eulerAngles = new Vector3(0, 180, 0);
+        }
+        
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 788958870}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52,8 +52,8 @@ MonoBehaviour:
   speedX: 10
   speedY: 10
   gravity: 0.4
-  jumpForce: 14
-  terminalVelocity: 20
+  jumpForce: 8
+  terminalVelocity: 5
   extremitiesOffset: 0.05
   innerVerticalOffset: 0.25
   distanceGrounded: 0.15

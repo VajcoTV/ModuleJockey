@@ -65,7 +65,7 @@ public class Movement : MonoBehaviour
             {
                 animator.SetTrigger("Jump");
                 verticalVelocity = jumpForce;
-                slopeNormal = Vector3.up;
+                slopeNormal = Vector3.up * Time.deltaTime;
             }
         }
         else

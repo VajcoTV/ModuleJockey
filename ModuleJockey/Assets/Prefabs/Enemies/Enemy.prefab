@@ -10,10 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4611357280307361788}
   - component: {fileID: 4611357280307361791}
-  - component: {fileID: 4611357280307361789}
   - component: {fileID: 1409313280}
   - component: {fileID: 1240916892}
-  - component: {fileID: 1240916893}
+  - component: {fileID: 635218416}
+  - component: {fileID: 635218421}
+  - component: {fileID: 635218415}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: -5978235611348364373, guid: a6c9aa5da3dfee444ae42166d2bf353b,
     type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -86,26 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4611357280307361789
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4611357280307361790}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32d48fb6ea7cbc74f9bd503882e1850c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationspeed: 1
-  raymax: 1
-  speed: 3
-  goright: 1
-  icanrun: 0
-  enemydamage: 0
-  player: {fileID: 8406306401008655939, guid: 5986a79452a5b62439a07b7c8c2d7212, type: 3}
-  rb2D: {fileID: 4611357280307361763, guid: 03e475da1ab4ebc4f9cd21820c37aa25, type: 3}
 --- !u!95 &1409313280
 Animator:
   serializedVersion: 3
@@ -139,10 +120,10 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
---- !u!136 &1240916893
-CapsuleCollider:
+--- !u!65 &635218416
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -151,7 +132,31 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.23
-  m_Height: 4.11
-  m_Direction: 1
-  m_Center: {x: 0, y: -0.32, z: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.3, y: 0, z: 0.3}
+  m_Center: {x: 0, y: -2.32, z: 0}
+--- !u!65 &635218421
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4611357280307361790}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &635218415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4611357280307361790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b260acc36852d641a2f108a457749d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

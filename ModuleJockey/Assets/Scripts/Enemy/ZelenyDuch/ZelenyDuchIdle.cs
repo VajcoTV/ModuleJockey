@@ -15,8 +15,6 @@ public class ZelenyDuchIdle : StateMachineBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
         rb = animator.GetComponent<Rigidbody>();
         enemy = animator.GetComponent<Transform>();
-        
-
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

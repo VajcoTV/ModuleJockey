@@ -7,6 +7,8 @@ TagManager:
   - Stena
   - playercollider
   - EnemyTag
+  - Bullet
+  - ZelenyDuch
   layers:
   - Default
   - TransparentFX

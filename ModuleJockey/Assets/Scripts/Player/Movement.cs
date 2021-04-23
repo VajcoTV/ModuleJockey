@@ -5,6 +5,12 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    public delegate void Attack1();
+    public static event Attack1 attack1;
+    public delegate void Attack2();
+    public static event Attack2 attack2;
+    public delegate void Attack3();
+    public static event Attack3 attack3;
     [Header("References")]
     private Animator animator;
     CharacterController controller;
@@ -14,6 +20,14 @@ public class Movement : MonoBehaviour
     public int noOfClicks = 0;
     float lastClickedTime = 0;
     public float maxComboDelay = 1.2f;
+    [Header("Throw")]
+    [SerializeField] Transform firePoint;
+    [SerializeField] Rigidbody Knifepref;
+    [SerializeField] float Knifeforce;
+    public float blades;
+    public float ThrowDelay = 1.2f;
+    Vector3 destination;
+    bool canthrow = true;
     [Header("Movement")]
     Vector3 slopeNormal;
     bool grounded;
@@ -29,6 +43,7 @@ public class Movement : MonoBehaviour
     [SerializeField] float innerVerticalOffset = 0.25f;
     [SerializeField] float distanceGrounded = 0.15f;
     [SerializeField] float slopeThreshold = 0.55f;
+
 
 
     //Awake
@@ -49,6 +64,7 @@ public class Movement : MonoBehaviour
     private void Update()
     {
         Swing();
+        Throw();
 
         Vector3 inputVector = PoolInput();
         Vector3 moveVector = new Vector3(inputVector.x * speedX, 0, inputVector.y * speedY);
@@ -64,16 +80,16 @@ public class Movement : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 animator.SetTrigger("Jump");
-                verticalVelocity = jumpForce;
-                slopeNormal = Vector3.up * Time.deltaTime;
+                verticalVelocity = jumpForce; //nie
+                slopeNormal = Vector3.up;
             }
         }
         else
         {
-            verticalVelocity -= gravity;
-            slopeNormal = Vector3.up;
+            verticalVelocity -= gravity; //pochybujem
+            slopeNormal = Vector3.up; //tu urcite nie
             if (verticalVelocity < -terminalVelocity)
-                verticalVelocity = -terminalVelocity;
+                verticalVelocity = -terminalVelocity; //? mozno ale skor nie
         }
         moveVector.y = verticalVelocity;
         if (slopeNormal != Vector3.up) moveVector = FollowFloor(moveVector);
@@ -187,8 +203,17 @@ public class Movement : MonoBehaviour
             if (noOfClicks == 1)
             {
                 animator.SetBool("Attack1", true);
+
             }
             noOfClicks = Mathf.Clamp(noOfClicks, 0, 3);
+        }
+    }
+    public void Throw()
+    {
+        if (Input.GetKeyDown(KeyCode.F) && canthrow && blades > 0)
+        {
+            StartCoroutine("CooldownThrow");
+
         }
     }
     //Atack Stuff returning bools
@@ -199,7 +224,7 @@ public class Movement : MonoBehaviour
             animator.SetBool("Attack2", true);
         }
         else
-        {
+        {   
             animator.SetBool("Attack1", false);
             noOfClicks = 0;
         }
@@ -208,7 +233,7 @@ public class Movement : MonoBehaviour
     public void return2()
     {
         if (noOfClicks >= 3)
-        {
+        { 
             animator.SetBool("Attack3", true);
         }
         else
@@ -225,6 +250,29 @@ public class Movement : MonoBehaviour
         animator.SetBool("Attack3", false);
         noOfClicks = 0;
     }
+    public void Swing1()
+    {
+        if (attack1 != null)
+        {
+            attack1();
+        }
+    }
+    public void Swing2()
+    {
+        if (attack2 != null)
+        {
+            attack2();
+          
+        }
+    }
+    public void Swing3()
+    {
+        if (attack3 != null)
+        {
+            attack3();
+        }
+    }
+
     public void PlayerNormalDimensionSwitch()
     {
         Debug.Log("Normalna dimenzia");
@@ -234,7 +282,17 @@ public class Movement : MonoBehaviour
     {
         Debug.Log("Magic dimenzia");
     }
-   
+    IEnumerator CooldownThrow()
+    {
+        var projectileInstance = Instantiate(Knifepref, firePoint.position, firePoint.rotation);
+        projectileInstance.AddForce(firePoint.forward * Knifeforce);
+        canthrow = false;
+        blades -= 1;
+       yield return new WaitForSeconds(ThrowDelay);
+        canthrow = true;
+        
+    }
+  
+ 
 
-    
 }

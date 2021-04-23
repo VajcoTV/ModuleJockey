@@ -60,7 +60,7 @@ public class SideScrollerMotor : MonoBehaviour
         else
         {
             
-            verticalVelocity -= gravity;
+            verticalVelocity -= gravity *Time.deltaTime;
             slopeNormal = Vector3.up;
 
           

@@ -8,9 +8,11 @@ public class MainZelenyDuchCs : MonoBehaviour
     Transform Player;
     [SerializeField]int EnemyHealth = 10;
     GameObject player;
+    public GameObject DmgText;
 
     void Start()
     {
+
         SwitchManager.NormalSwitch += PlayerNormalDimensionSwitch;
         SwitchManager.MagicSwitch += PlayerMagicDimensionSwitch;
         Movement.attack1 += TakeDmg1;
@@ -75,6 +77,8 @@ public class MainZelenyDuchCs : MonoBehaviour
     public void TakeDamege(int dmg)
     {
         EnemyHealth -= dmg;
+        var go = Instantiate(DmgText, transform.position, Quaternion.identity, transform);
+        go.GetComponent<TextMesh>().text = dmg.ToString();
         if (EnemyHealth <= 0)
         {
             Destroy(this.gameObject);

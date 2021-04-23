@@ -32,6 +32,7 @@ public class Movement : MonoBehaviour
     Vector3 slopeNormal;
     bool grounded;
     float verticalVelocity;
+    bool canmove = true;
     [Header("Movement config")]
     [SerializeField] float speedX = 5;
     [SerializeField] float speedY = 5;
@@ -91,26 +92,35 @@ public class Movement : MonoBehaviour
             if (verticalVelocity < -terminalVelocity)
                 verticalVelocity = -terminalVelocity; //? mozno ale skor nie
         }
-        moveVector.y = verticalVelocity;
-        if (slopeNormal != Vector3.up) moveVector = FollowFloor(moveVector);
-        controller.Move(moveVector * Time.deltaTime);
-        float r = Input.GetAxisRaw("Horizontal");
-        float v = Input.GetAxisRaw("Vertical");
-        if (r + v == 0 && v != -1 && r != -1)
+       
+
+
+        if (canmove)
         {
-            animator.SetBool("Run", false);
-        }
-        else
-        {
-            animator.SetBool("Run", true);
-        }
-        if (r < 0)
-        {
-            transform.eulerAngles = new Vector3(0, 180, 0);
-        }
-        else if (r > 0)
-        {
-            transform.eulerAngles = new Vector3(0, 0, 0);
+            moveVector.y = verticalVelocity;
+            if (slopeNormal != Vector3.up) moveVector = FollowFloor(moveVector);
+            controller.Move(moveVector * Time.deltaTime);
+
+            float r = Input.GetAxisRaw("Horizontal");
+            float v = Input.GetAxisRaw("Vertical");
+
+
+            if (r + v == 0 && v != -1 && r != -1)
+            {
+                animator.SetBool("Run", false);
+            }
+            else
+            {
+                animator.SetBool("Run", true);
+            }
+            if (r < 0)
+            {
+                transform.eulerAngles = new Vector3(0, 180, 0);
+            }
+            else if (r > 0)
+            {
+                transform.eulerAngles = new Vector3(0, 0, 0);
+            }
         }
     }
 
@@ -194,6 +204,7 @@ public class Movement : MonoBehaviour
         if (Time.time - lastClickedTime > maxComboDelay)
         {
             noOfClicks = 0;
+           
         }
 
         if (Input.GetKeyDown(KeyCode.E))
@@ -203,7 +214,7 @@ public class Movement : MonoBehaviour
             if (noOfClicks == 1)
             {
                 animator.SetBool("Attack1", true);
-
+                canmove = false;
             }
             noOfClicks = Mathf.Clamp(noOfClicks, 0, 3);
         }
@@ -245,6 +256,7 @@ public class Movement : MonoBehaviour
 
     public void return3()
     {
+        canmove = true;
         animator.SetBool("Attack1", false);
         animator.SetBool("Attack2", false);
         animator.SetBool("Attack3", false);

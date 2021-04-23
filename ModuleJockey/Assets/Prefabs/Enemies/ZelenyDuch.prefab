@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 635218415}
   - component: {fileID: 1988630929}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: ZelenyDuch
   m_TagString: ZelenyDuch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -148,6 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyHealth: 10
+  DmgText: {fileID: 2649107345086785296, guid: 23664a453c900b54fb2b67f8f10470bd, type: 3}
 --- !u!136 &1988630929
 CapsuleCollider:
   m_ObjectHideFlags: 0

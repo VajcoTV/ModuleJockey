@@ -156,7 +156,8 @@ MonoBehaviour:
   gamedata:
     Currentscene: 0
     DMG: 0
-    health: 100
+    maxhealth: 100
+    Armor: 0.5
   gamedatapath: 
 --- !u!114 &17988690
 MonoBehaviour:
@@ -212,8 +213,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3447e98895520b340abffae44ad34585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursor: {fileID: 0}
-  cursorondown: {fileID: 0}
+  cursor: {fileID: 2800000, guid: 3b6c160ee7f8d064ab52fee38333775e, type: 3}
+  cursorondown: {fileID: 2800000, guid: a614a020b79c7bd45908a02af84570be, type: 3}
 --- !u!1001 &1939258447
 PrefabInstance:
   m_ObjectHideFlags: 0

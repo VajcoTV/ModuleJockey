@@ -12,7 +12,7 @@ public class GameData
     public GameData()
     {
         maxhealth = 100;
-        Currentscene = 10;
+        Currentscene = 0;
         Armor = 0.5f;
 
     }

@@ -6,30 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Main.unity
-    guid: 1e45abd9555a77649a0f30eab666d5a0
-  - enabled: 1
-    path: Assets/Scenes/Layer1_level 1.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/Town.unity
-    guid: db24a25acf1adcd4f88ca623c46ee401
-  - enabled: 1
-    path: Assets/Scenes/Layer1_level 3.unity
-    guid: e7aebb7dc74a8cb40ba3657b57f0d99a
-  - enabled: 1
-    path: Assets/Scenes/Layer1_bossfight.unity
-    guid: a905485e624a22e48afc027e82fd8da2
-  - enabled: 1
-    path: Assets/Scenes/Layer1_level 2.unity
-    guid: cd8e167eeecbf0048aef5e1879054cae
+    path: Assets/Scenes/Layer1_level 0.unity
+    guid: e311330a427e7194093ecaf51445309b
   - enabled: 1
     path: Assets/Scenes/UI.unity
     guid: 9365f4be009f3e043b9214c73017fe81
   - enabled: 1
-    path: Assets/Scenes/Layer1_level 4.unity
-    guid: f0e79049e8e8a604c8e3d3b529816e58
-  - enabled: 1
-    path: Assets/Scenes/Layer1_level 5.unity
-    guid: 38ee3515494e2e64ca3bb3daacee5f1b
+    path: Assets/Scenes/Main.unity
+    guid: 1e45abd9555a77649a0f30eab666d5a0
   m_configObjects: {}

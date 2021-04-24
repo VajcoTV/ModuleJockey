@@ -78,24 +78,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 100
-  swing1dmg: 3
-  swing2dmg: 3
-  swing3dmg: 6
+  swing1dmg: 10
+  swing2dmg: 11
+  swing3dmg: 13
   Knifedmg: 10
-  armor: 3
+  armor: 5
   noOfClicks: 0
   maxComboDelay: 1.2
   firePoint: {fileID: 2952317794491919179}
   Knifepref: {fileID: 7553342360157579468, guid: fc9d65b44bbc47e469efec497ace9849,
     type: 3}
   Knifeforce: 1900
-  blades: 30
-  ThrowDelay: 0.5
-  speedX: 10
-  speedY: 10
-  gravity: 0.4
-  jumpForce: 30
-  terminalVelocity: 8
+  blades: 10
+  ThrowDelay: 1
+  speedX: 9
+  speedY: 9
+  gravity: 1
+  jumpForce: 24
+  terminalVelocity: 23
   extremitiesOffset: 0.05
   innerVerticalOffset: 0.25
   distanceGrounded: 0.15

@@ -148,10 +148,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyHealth: 50
-  DMG: 30
+  DMG: 15
   PlayerDistance: 3
   HitPlayerDistance: 2
-  Armor: 3
+  Armor: 0
   DmgText: {fileID: 2649107345086785296, guid: 23664a453c900b54fb2b67f8f10470bd, type: 3}
 --- !u!136 &1988630929
 CapsuleCollider:

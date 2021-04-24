@@ -77,7 +77,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca850ecac9296484d8b36e7f3e093606, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 3
+  Health: 100
+  swing1dmg: 3
+  swing2dmg: 3
+  swing3dmg: 6
+  Knifedmg: 10
+  armor: 3
   noOfClicks: 0
   maxComboDelay: 1.2
   firePoint: {fileID: 2952317794491919179}
@@ -89,7 +94,7 @@ MonoBehaviour:
   speedX: 10
   speedY: 10
   gravity: 0.4
-  jumpForce: 8
+  jumpForce: 30
   terminalVelocity: 8
   extremitiesOffset: 0.05
   innerVerticalOffset: 0.25

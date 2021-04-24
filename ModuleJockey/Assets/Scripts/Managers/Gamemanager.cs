@@ -14,7 +14,7 @@ public class Gamemanager : MonoBehaviour
     private void Start()
     {
         app.sceneloader.LoadScene("UI"); //nalouduj veci co sa maju
-        
+        app.sceneloader.LoadScene("Layer1_level 0");
 
     }
     public void ChangeScene(string currentscene, string previousscene)

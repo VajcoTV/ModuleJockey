@@ -15,15 +15,18 @@ public class ZelenyDuchIdle : StateMachineBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
         rb = animator.GetComponent<Rigidbody>();
         enemy = animator.GetComponent<Transform>();
+        player = app.playermanager.player.transform;
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        if (Vector3.Distance(player.transform.position, enemy.transform.position) < 10f)
-        {
-            animator.SetBool("Run", true);
-        }
+        
+            if (Vector3.Distance(player.transform.position, enemy.transform.position) < 10f)
+            {
+                animator.SetBool("Run", true);
+            }
+        
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state

@@ -28,7 +28,7 @@ public class MainZelenyDuchCs : MonoBehaviour
         Movement.attack3 += TakeDmg3;
         //ziskavanie referencii
         animator = GetComponent<Animator>();
-        player = GameObject.FindGameObjectWithTag("Player");
+        player = app.playermanager.player;
     }
 
     // Update is called once per frame

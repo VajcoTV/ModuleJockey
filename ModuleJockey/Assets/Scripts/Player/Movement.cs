@@ -216,7 +216,10 @@ public class Movement : MonoBehaviour
             if (noOfClicks == 1)
             {
                 animator.SetBool("Attack1", true);
-                canmove = false;
+                if (grounded)
+                {
+                    canmove = false;
+                }
             }
             noOfClicks = Mathf.Clamp(noOfClicks, 0, 3);
         }

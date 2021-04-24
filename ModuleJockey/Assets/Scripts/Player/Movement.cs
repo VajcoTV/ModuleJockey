@@ -14,8 +14,13 @@ public class Movement : MonoBehaviour
     [Header("References")]
     private Animator animator;
     CharacterController controller;
-    [Header("Health")]
+    [Header("Player Stats")]
     public float Health = 3;
+    public int swing1dmg = 1;
+    public int swing2dmg = 1;
+    public int swing3dmg = 3;
+    public int Knifedmg = 1;
+    public int armor = 1;
     [Header("Combo")]
     public int noOfClicks = 0;
     float lastClickedTime = 0;
@@ -50,7 +55,6 @@ public class Movement : MonoBehaviour
     //Awake
     void Awake()
     {
-
         controller = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
         SwitchManager.NormalSwitch += PlayerNormalDimensionSwitch;
@@ -61,19 +65,27 @@ public class Movement : MonoBehaviour
     {
         
     }
+    private void FixedUpdate()
+    {
+        Jump();
+    }
     //Update
     private void Update()
     {
         Swing();
         Throw();
-
-        Vector3 inputVector = PoolInput();
-        Vector3 moveVector = new Vector3(inputVector.x * speedX, 0, inputVector.y * speedY);
+        moving();
+        
+       
+    }
+    //Jump
+    public void Jump()
+    {
         grounded = Grounded();
         animator.SetBool("Down", grounded);
         if (grounded)
         {
-            
+
 
             verticalVelocity = -1;
 
@@ -81,7 +93,7 @@ public class Movement : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 animator.SetTrigger("Jump");
-                verticalVelocity = jumpForce; //nie
+                verticalVelocity += jumpForce; //nie
                 slopeNormal = Vector3.up;
             }
         }
@@ -92,9 +104,12 @@ public class Movement : MonoBehaviour
             if (verticalVelocity < -terminalVelocity)
                 verticalVelocity = -terminalVelocity; //? mozno ale skor nie
         }
-       
-
-
+    }
+    //cely movement
+    public void moving()
+    {
+        Vector3 inputVector = PoolInput();
+        Vector3 moveVector = new Vector3(inputVector.x * speedX, 0, inputVector.y * speedY);
         if (canmove)
         {
             moveVector.y = verticalVelocity;
@@ -123,12 +138,7 @@ public class Movement : MonoBehaviour
             }
         }
     }
-
-    //FixedUpdate
-    private void FixedUpdate()
-    {
-       
-    }
+    //Input Checker
     private Vector3 PoolInput()
     {
         Vector3 r = default(Vector3);
@@ -137,6 +147,7 @@ public class Movement : MonoBehaviour
         return (r.magnitude > 1) ? r.normalized : r;
        
     }
+    //grounded checker
     public bool Grounded()
     {
         if (verticalVelocity > 0)
@@ -189,15 +200,6 @@ public class Movement : MonoBehaviour
         return right * moveVector.x + forward * moveVector.z;
     }
 
-    //OnCollisionEnter
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "playercollider")
-        {
-            
-           
-        }
-    }
    //Logic Behind the Swing
     public void Swing()
     {
@@ -219,15 +221,15 @@ public class Movement : MonoBehaviour
             noOfClicks = Mathf.Clamp(noOfClicks, 0, 3);
         }
     }
+    //cheknutie inputu na zacatie korutiny pred throw nozika
     public void Throw()
     {
         if (Input.GetKeyDown(KeyCode.F) && canthrow && blades > 0)
         {
             StartCoroutine("CooldownThrow");
-
         }
     }
-    //Atack Stuff returning bools
+    //Combo system 
     public void return1()
     {
         if (noOfClicks >= 2)
@@ -262,6 +264,7 @@ public class Movement : MonoBehaviour
         animator.SetBool("Attack3", false);
         noOfClicks = 0;
     }
+    //odpalenie eventov na sekanie
     public void Swing1()
     {
         if (attack1 != null)
@@ -284,7 +287,7 @@ public class Movement : MonoBehaviour
             attack3();
         }
     }
-
+    //switch dimenzii
     public void PlayerNormalDimensionSwitch()
     {
         Debug.Log("Normalna dimenzia");
@@ -294,6 +297,7 @@ public class Movement : MonoBehaviour
     {
         Debug.Log("Magic dimenzia");
     }
+    //hadzanie nozikom
     IEnumerator CooldownThrow()
     {
         var projectileInstance = Instantiate(Knifepref, firePoint.position, firePoint.rotation);
@@ -303,6 +307,16 @@ public class Movement : MonoBehaviour
        yield return new WaitForSeconds(ThrowDelay);
         canthrow = true;
         
+    }
+    //funkcia pouzivaju ju enemaci ked chcu poskodit playera
+    public void TakeDmg(int dmg)
+    {
+
+        Health = Health + armor - dmg;
+        if(Health <= 0)
+        {
+            Debug.Log("Player ded");
+        }
     }
   
  

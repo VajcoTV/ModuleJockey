@@ -147,7 +147,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b260acc36852d641a2f108a457749d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyHealth: 10
+  EnemyHealth: 50
+  DMG: 30
+  PlayerDistance: 3
+  HitPlayerDistance: 2
+  Armor: 3
   DmgText: {fileID: 2649107345086785296, guid: 23664a453c900b54fb2b67f8f10470bd, type: 3}
 --- !u!136 &1988630929
 CapsuleCollider:

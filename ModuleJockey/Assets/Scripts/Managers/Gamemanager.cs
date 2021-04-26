@@ -13,8 +13,8 @@ public class Gamemanager : MonoBehaviour
     }
     private void Start()
     {
-        app.sceneloader.LoadScene("UI"); //nalouduj veci co sa maju
-        app.sceneloader.LoadScene("Layer1_level 0");
+        app.sceneloader.LoadScene("MainMenu"); //nalouduj veci co sa maju
+       
 
     }
     public void ChangeScene(string currentscene, string previousscene)
@@ -37,6 +37,7 @@ public class Gamemanager : MonoBehaviour
     {
         app.sceneloader.LoadScene("Town");
     }
+
     public void LoadLevel() // ked idem z town do levelu
     {
         ChangeScene("Layer1_level " + app.datamanager.gamedata.Currentscene, "Town");

@@ -10,10 +10,10 @@ public class CameraFollow : MonoBehaviour {
 	public float smoothSpeed;
     private void Start()
     {
-        Debug.Log(target);
+     
         target = app.playermanager.player.transform;
         camtransform = Camera.main.transform;
-        Debug.Log(target);
+       
     }
 
     void LateUpdate(){

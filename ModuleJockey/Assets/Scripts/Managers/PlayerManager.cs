@@ -11,7 +11,8 @@ public class PlayerManager : MonoBehaviour
     {
         app.playermanager = this;
         player = Instantiate(playerpref, new Vector3(45, 15, 20), Quaternion.identity);
-        Debug.Log(player);
+      
     }
+    
 
 }

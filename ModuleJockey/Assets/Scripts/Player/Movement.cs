@@ -321,6 +321,7 @@ public class Movement : MonoBehaviour
             Debug.Log("Player ded");
         }
     }
+
   
  
 

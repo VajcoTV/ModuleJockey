@@ -29,4 +29,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Layer1_level 5.unity
     guid: 38ee3515494e2e64ca3bb3daacee5f1b
+  - enabled: 1
+    path: Assets/Scenes/Map.unity
+    guid: b012c18646c0cdc4f97d245e5c0f962d
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: c5b2f866968a9b843b176f699f86e62d
   m_configObjects: {}

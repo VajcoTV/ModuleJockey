@@ -44,6 +44,7 @@ public class Movement : MonoBehaviour
     [SerializeField] float gravity = 0.25f;
     [SerializeField] float jumpForce = 8.0f;
     [SerializeField] float terminalVelocity = 5.0f;
+    [SerializeField] bool Jumping = false;
     [Header("Raycast")]
     [SerializeField] float extremitiesOffset = 0.05f;
     [SerializeField] float innerVerticalOffset = 0.25f;
@@ -67,7 +68,9 @@ public class Movement : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        Jump();
+        
+            Jump();
+
     }
     //Update
     private void Update()
@@ -75,8 +78,11 @@ public class Movement : MonoBehaviour
         Swing();
         Throw();
         moving();
-        
-       
+        if(Input.GetKeyDown(KeyCode.Space) && grounded)
+        {
+            Jumping = true;
+        }
+
     }
     //Jump
     public void Jump()
@@ -90,11 +96,12 @@ public class Movement : MonoBehaviour
             verticalVelocity = -1;
 
 
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Jumping)
             {
                 animator.SetTrigger("Jump");
                 verticalVelocity += jumpForce; //nie
                 slopeNormal = Vector3.up;
+                Jumping = false;
             }
         }
         else

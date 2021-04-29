@@ -68,9 +68,7 @@ public class Movement : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        
-            Jump();
-
+       Jump();
     }
     //Update
     private void Update()
@@ -239,6 +237,7 @@ public class Movement : MonoBehaviour
             StartCoroutine("CooldownThrow");
         }
     }
+    //Combo system 
     //Combo system 
     public void return1()
     {

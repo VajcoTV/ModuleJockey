@@ -38,11 +38,18 @@ public class MainZelenyDuchCs : MonoBehaviour
     }
     void PlayerNormalDimensionSwitch()
     {
-        animator.SetBool("Switch", false);
+        if(animator != null)
+        {
+            animator.SetBool("Switch", false);
+        }
+       
     }
     void PlayerMagicDimensionSwitch()
     {
-        animator.SetBool("Switch", true);
+        if (animator != null)
+        {
+            animator.SetBool("Switch", true);
+        }
     }
     //ak je zavolany event v tomto pripade player swingne a sme od neho v urcitej vzdialenosti odpal funkciu zober si dmg 
     void TakeDmg1()

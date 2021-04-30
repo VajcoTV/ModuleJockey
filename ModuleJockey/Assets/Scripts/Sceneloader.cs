@@ -27,10 +27,13 @@ public class Sceneloader : MonoBehaviour
             {
                 async.allowSceneActivation = true;
                 
+                
             }
             yield return null;
         }
+       
         SceneManager.SetActiveScene(SceneManager.GetSceneByName(scenename));
+       
     }
     public IEnumerator UnLoadScenecorutine(string scenename)
     {
@@ -45,6 +48,7 @@ public class Sceneloader : MonoBehaviour
     {
         StartCoroutine(UnLoadScenecorutine(scenename));
     }
+   
  
 
 

@@ -13,6 +13,7 @@ public class CameraFollow : MonoBehaviour {
      
         target = app.playermanager.player.transform;
         camtransform = Camera.main.transform;
+      
        
     }
 

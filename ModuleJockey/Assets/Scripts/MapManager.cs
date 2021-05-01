@@ -8,6 +8,8 @@ public class MapManager : MonoBehaviour
     {
         app.sceneloader.UnloadScene("Map");
         app.sceneloader.LoadScene("Layer1_level 0");
-       
+     
+
+
     }
 }

@@ -13,24 +13,32 @@ public class StageManager : MonoBehaviour
 
     void Start()
     {
+        
         SwitchManager.NormalSwitch += PlayerNormalDimensionSwitch;
         SwitchManager.MagicSwitch += PlayerMagicDimensionSwitch;
         
     }
     public void PlayerNormalDimensionSwitch()
     {
-        NormalBG.SetActive(true);
-        NormalFloor.SetActive(true);
-        MagicBG.SetActive(false);
-        MagicFloor.SetActive(false);
+        if(NormalBG && NormalFloor && MagicBG && MagicFloor != null)
+        {
+            NormalBG.SetActive(true);
+            NormalFloor.SetActive(true);
+            MagicBG.SetActive(false);
+            MagicFloor.SetActive(false);
+        }
 
     }
     public void PlayerMagicDimensionSwitch()
     {
-        NormalBG.SetActive(false);
-        NormalFloor.SetActive(false);
-        MagicBG.SetActive(true);
-        MagicFloor.SetActive(true);
+        if (NormalBG && NormalFloor && MagicBG && MagicFloor != null)
+        {
+            NormalBG.SetActive(false);
+            NormalFloor.SetActive(false);
+            MagicBG.SetActive(true);
+            MagicFloor.SetActive(true);
+        }
+   
     }
 
 

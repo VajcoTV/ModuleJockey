@@ -83,6 +83,8 @@ MonoBehaviour:
   swing3dmg: 13
   Knifedmg: 10
   armor: 5
+  numberofenemy: 0
+  MaxNumberofenemy: 2
   noOfClicks: 0
   maxComboDelay: 1.2
   firePoint: {fileID: 2952317794491919179}
@@ -96,6 +98,8 @@ MonoBehaviour:
   gravity: 1
   jumpForce: 24
   terminalVelocity: 23
+  Jumping: 0
+  Radius: 10
   extremitiesOffset: 0.05
   innerVerticalOffset: 0.25
   distanceGrounded: 0.15

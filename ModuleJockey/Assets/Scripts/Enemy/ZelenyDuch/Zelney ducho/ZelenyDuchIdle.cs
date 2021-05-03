@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ZelenyDuchIdle : StateMachineBehaviour
 {
-    Transform player;
+    GameObject player;
     Rigidbody rb;
     float speed = 10;
     Transform enemy;
@@ -15,7 +15,7 @@ public class ZelenyDuchIdle : StateMachineBehaviour
       
         rb = animator.GetComponent<Rigidbody>();
         enemy = animator.GetComponent<Transform>();
-        player = app.playermanager.player.transform;
+        player = app.playermanager.player;
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -24,7 +24,16 @@ public class ZelenyDuchIdle : StateMachineBehaviour
         
             if (Vector3.Distance(player.transform.position, enemy.transform.position) < 10f)
             {
+                if(player.GetComponent<Movement>().numberofenemy < player.GetComponent<Movement>().MaxNumberofenemy)
+                {
+                player.GetComponent<Movement>().numberofenemy++;
+                animator.SetBool("Chase", true);
+                }
+                else
+                {
                 animator.SetBool("Run", true);
+                }
+                
             }
         
     }

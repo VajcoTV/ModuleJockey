@@ -21,6 +21,8 @@ public class Movement : MonoBehaviour
     public int swing3dmg = 3;
     public int Knifedmg = 1;
     public int armor = 1;
+    public int numberofenemy = 0;
+    public int MaxNumberofenemy = 2;
     [Header("Combo")]
     public int noOfClicks = 0;
     float lastClickedTime = 0;
@@ -45,6 +47,7 @@ public class Movement : MonoBehaviour
     [SerializeField] float jumpForce = 8.0f;
     [SerializeField] float terminalVelocity = 5.0f;
     [SerializeField] bool Jumping = false;
+    [SerializeField] float Radius = 5f;
     [Header("Raycast")]
     [SerializeField] float extremitiesOffset = 0.05f;
     [SerializeField] float innerVerticalOffset = 0.25f;
@@ -327,7 +330,11 @@ public class Movement : MonoBehaviour
             Debug.Log("Player ded");
         }
     }
-
+    public Vector3 PlayerRadius()
+    {
+        Vector3 playerradius = Random.insideUnitCircle * Radius;
+        return playerradius;
+    }
   
  
 

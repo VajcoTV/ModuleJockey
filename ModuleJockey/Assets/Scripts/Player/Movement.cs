@@ -330,12 +330,18 @@ public class Movement : MonoBehaviour
             Debug.Log("Player ded");
         }
     }
-    public Vector3 PlayerRadius()
+    public Vector3 PlayerRadius(float yaxis)
     {
-        Vector3 playerradius = Random.insideUnitCircle * Radius;
-        return playerradius;
+        Vector2 playerradius = Random.insideUnitCircle * Radius;
+        Debug.Log(new Vector3(playerradius.x, 0, playerradius.y));
+        return new Vector3(playerradius.x + transform.position.x, yaxis, playerradius.y + transform.position.z);
     }
-  
- 
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(this.transform.position, Radius);
+    }
+
+
 
 }

@@ -142,7 +142,15 @@ public class MainCervenyDuchCs : MonoBehaviour
         go.GetComponent<TextMesh>().text = dmg.ToString();
         if (EnemyHealth <= 0)
         {
-            Destroy(this.gameObject);
+            if (animator.GetBool("Chase") == true)
+            {
+                player.GetComponent<Movement>().numberofenemy--;
+                Destroy(this.gameObject);
+            }
+            else
+            {
+                Destroy(this.gameObject);
+            }
         }
 
     }

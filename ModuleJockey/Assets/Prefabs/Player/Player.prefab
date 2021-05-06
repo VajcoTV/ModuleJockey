@@ -99,7 +99,7 @@ MonoBehaviour:
   jumpForce: 24
   terminalVelocity: 23
   Jumping: 0
-  Radius: 10
+  Radius: 20
   extremitiesOffset: 0.05
   innerVerticalOffset: 0.25
   distanceGrounded: 0.15

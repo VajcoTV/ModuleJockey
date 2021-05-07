@@ -57,6 +57,7 @@ public class MainZelenyDuchCs : MonoBehaviour
         {
             if (Vector3.Distance(player.transform.position, transform.position) < PlayerDistance)
             {
+                animator.SetTrigger("Stun");
                 TakeDamege(player.GetComponent<Movement>().swing1dmg);
             }
         }
@@ -67,6 +68,7 @@ public class MainZelenyDuchCs : MonoBehaviour
         {
             if (Vector3.Distance(player.transform.position, transform.position) < PlayerDistance)
             {
+                animator.SetTrigger("Stun");
                 TakeDamege(player.GetComponent<Movement>().swing2dmg);
             }
         }
@@ -77,6 +79,7 @@ public class MainZelenyDuchCs : MonoBehaviour
         {
             if (Vector3.Distance(player.transform.position, transform.position) < PlayerDistance)
             {
+                animator.SetTrigger("Stun");
                 TakeDamege(player.GetComponent<Movement>().swing3dmg);
             }
         }

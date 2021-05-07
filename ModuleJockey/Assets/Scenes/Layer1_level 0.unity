@@ -722,6 +722,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 635218415, guid: 03e475da1ab4ebc4f9cd21820c37aa25, type: 3}
+      propertyPath: EnemyHealth
+      value: 10000
+      objectReference: {fileID: 0}
     - target: {fileID: 4611357280307361788, guid: 03e475da1ab4ebc4f9cd21820c37aa25,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -217,7 +217,7 @@ public class Movement : MonoBehaviour
            
         }
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && grounded)
         {
             lastClickedTime = Time.time;
             noOfClicks++;
@@ -333,7 +333,7 @@ public class Movement : MonoBehaviour
     public Vector3 PlayerRadius(float yaxis)
     {
         Vector2 playerradius = Random.insideUnitCircle * Radius;
-        Debug.Log(new Vector3(playerradius.x, 0, playerradius.y));
+      
         return new Vector3(playerradius.x + transform.position.x, yaxis, playerradius.y + transform.position.z);
     }
     private void OnDrawGizmos()
@@ -341,6 +341,14 @@ public class Movement : MonoBehaviour
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(this.transform.position, Radius);
     }
+    IEnumerator AttackUnStuck()
+    {
+       
+        yield return new WaitForSeconds(1.2f);
+        return3();
+
+    }
+
 
 
 

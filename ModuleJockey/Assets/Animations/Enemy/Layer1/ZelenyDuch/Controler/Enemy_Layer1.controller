@@ -97,7 +97,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Enemy-Guardian-IDLE
+  m_Name: IDLE NORMAL
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -227,7 +227,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Enemy-Guardian-IDLE 0
+  m_Name: IDLE CORUPTED
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -307,7 +307,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Enemy-Guardian-ATTACK
+  m_Name: ATTACK
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -335,7 +335,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Enemy-Guardian-InChase
+  m_Name: CHASE
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -363,7 +363,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Enemy-Guardian-InChase 0
+  m_Name: PATROL CORUPTED
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -441,7 +441,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Enemy-Guardian-Patrol
+  m_Name: PATROL
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -563,7 +563,7 @@ AnimatorStateTransition:
     m_ConditionEvent: Switch
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: -5897913754138918409}
+  m_DstState: {fileID: 0}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -758,7 +758,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Enemy-Stun 0
+  m_Name: STUN CORUPTED
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -811,7 +811,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Enemy-Guardian-ATTACK 0
+  m_Name: ATTACK CORUPTED
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -974,7 +974,7 @@ AnimatorStateTransition:
     m_ConditionEvent: Switch
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: -5897913754138918409}
+  m_DstState: {fileID: 0}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -1024,7 +1024,7 @@ AnimatorStateTransition:
     m_ConditionEvent: Switch
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: -5897913754138918409}
+  m_DstState: {fileID: 0}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -1234,7 +1234,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Enemy-Stun
+  m_Name: STUN
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -1445,7 +1445,7 @@ AnimatorStateMachine:
     m_Position: {x: 590, y: 370, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -7486986537225345353}
-    m_Position: {x: 740, y: 110, z: 0}
+    m_Position: {x: 760, y: 140, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 9070668963008616167}
     m_Position: {x: 920, y: 360, z: 0}
@@ -1669,7 +1669,7 @@ AnimatorStateTransition:
     m_ConditionEvent: Switch
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: -5897913754138918409}
+  m_DstState: {fileID: 0}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -1862,7 +1862,7 @@ AnimatorStateTransition:
     m_ConditionEvent: Switch
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: -5897913754138918409}
+  m_DstState: {fileID: 0}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -2357,7 +2357,7 @@ AnimatorStateTransition:
     m_ConditionEvent: Switch
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: -5897913754138918409}
+  m_DstState: {fileID: 0}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -2554,7 +2554,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Enemy-Guardian-Patrol 0
+  m_Name: PATROL CORUPTED 0
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:

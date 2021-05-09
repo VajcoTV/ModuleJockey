@@ -54,7 +54,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: e187458377f7d074383f6bb0fa40e8f6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -75,9 +75,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -5978235611348364373, guid: a6c9aa5da3dfee444ae42166d2bf353b,
+  m_Sprite: {fileID: 3614018817116199621, guid: 3c87dc047ed4116498ce2fe0ed3133b7,
     type: 3}
-  m_Color: {r: 0, g: 1, b: 0.028794289, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b260acc36852d641a2f108a457749d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyHealth: 50
+  EnemyHealth: 10000
   DMG: 15
   PlayerDistance: 3
   HitPlayerDistance: 2

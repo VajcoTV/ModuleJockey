@@ -1,30 +1,30 @@
 fileFormatVersion: 2
-guid: 3c87dc047ed4116498ce2fe0ed3133b7
+guid: 394527b965959df41aeca8cfa5c46368
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3614018817116199621
-    second: Spriteheet-Ghost-Test-final-1_0
+      213: 6427284277044877305
+    second: Emisionlollamoaahahhah_0
   - first:
-      213: 1508552240627602599
-    second: Spriteheet-Ghost-Test-final-1_1
+      213: -6271873015814383813
+    second: Emisionlollamoaahahhah_1
   - first:
-      213: 6628746247424631486
-    second: Spriteheet-Ghost-Test-final-1_2
+      213: 7825653411917191367
+    second: Emisionlollamoaahahhah_2
   - first:
-      213: 8676037437467909601
-    second: Spriteheet-Ghost-Test-final-1_3
+      213: -8529509659102922955
+    second: Emisionlollamoaahahhah_3
   - first:
-      213: -2447958269184354158
-    second: Spriteheet-Ghost-Test-final-1_4
+      213: -7018018522854828273
+    second: Emisionlollamoaahahhah_4
   - first:
-      213: 5135058314605569057
-    second: Spriteheet-Ghost-Test-final-1_5
+      213: 4921280344927075948
+    second: Emisionlollamoaahahhah_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
+    enableMipMap: 1
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -67,9 +67,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 1
+  alphaIsTransparency: 0
   spriteTessellationDetail: -1
-  textureType: 8
+  textureType: 0
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -101,11 +101,35 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Spriteheet-Ghost-Test-final-1_0
+      name: Emisionlollamoaahahhah_0
       rect:
         serializedVersion: 2
         x: 0
@@ -113,20 +137,20 @@ TextureImporter:
         width: 680
         height: 680
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5cad9cd57f2972230800000000000000
-      internalID: 3614018817116199621
+      spriteID: 9f796bb2ffc423950800000000000000
+      internalID: 6427284277044877305
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spriteheet-Ghost-Test-final-1_1
+      name: Emisionlollamoaahahhah_1
       rect:
         serializedVersion: 2
         x: 680
@@ -134,20 +158,20 @@ TextureImporter:
         width: 680
         height: 680
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a45abb25447fe410800000000000000
-      internalID: 1508552240627602599
+      spriteID: b379600d8b4d5f8a0800000000000000
+      internalID: -6271873015814383813
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spriteheet-Ghost-Test-final-1_2
+      name: Emisionlollamoaahahhah_2
       rect:
         serializedVersion: 2
         x: 1360
@@ -155,20 +179,20 @@ TextureImporter:
         width: 680
         height: 680
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb2e2f767990efb50800000000000000
-      internalID: 6628746247424631486
+      spriteID: 7c8d5a8e05e4a9c60800000000000000
+      internalID: 7825653411917191367
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spriteheet-Ghost-Test-final-1_3
+      name: Emisionlollamoaahahhah_3
       rect:
         serializedVersion: 2
         x: 2040
@@ -176,20 +200,20 @@ TextureImporter:
         width: 680
         height: 680
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1edd34ee41a776870800000000000000
-      internalID: 8676037437467909601
+      spriteID: 53738e4082811a980800000000000000
+      internalID: -8529509659102922955
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spriteheet-Ghost-Test-final-1_4
+      name: Emisionlollamoaahahhah_4
       rect:
         serializedVersion: 2
         x: 2720
@@ -197,20 +221,20 @@ TextureImporter:
         width: 680
         height: 680
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 298594c8cea170ed0800000000000000
-      internalID: -2447958269184354158
+      spriteID: f075026265dfa9e90800000000000000
+      internalID: -7018018522854828273
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spriteheet-Ghost-Test-final-1_5
+      name: Emisionlollamoaahahhah_5
       rect:
         serializedVersion: 2
         x: 3400
@@ -218,14 +242,14 @@ TextureImporter:
         width: 680
         height: 680
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1242bf69454634740800000000000000
-      internalID: 5135058314605569057
+      spriteID: c6e7d7f4666eb4440800000000000000
+      internalID: 4921280344927075948
       vertices: []
       indices: 
       edges: []
@@ -239,9 +263,7 @@ TextureImporter:
     indices: 
     edges: []
     weights: []
-    secondaryTextures:
-    - texture: {fileID: 2800000, guid: 394527b965959df41aeca8cfa5c46368, type: 3}
-      name: _Emission
+    secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

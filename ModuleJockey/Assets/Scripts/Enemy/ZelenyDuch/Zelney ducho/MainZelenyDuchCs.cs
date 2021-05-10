@@ -15,19 +15,8 @@ public class MainZelenyDuchCs : MonoBehaviour
     [SerializeField] int Armor = 1;
     [Header("References")]
     public GameObject DmgText;
-    [Header("Colors")]
-    [Range(0.0f, 1f)]
-    public float NcolorR;
-    [Range(0.0f, 1f)]
-    public float NcolorG;
-    [Range(0.0f, 1f)]
-    public float NcolorB;
-    [Range(0.0f, 1f)]
-    public float CcolorR;
-    [Range(0.0f, 1f)]
-    public float CcolorG;
-    [Range(0.0f, 1f)]
-    public float CcolorB;
+    public Color Normalcolor;
+    public Color Coruptedcolor;
     public float intesity;
 
 
@@ -45,7 +34,7 @@ public class MainZelenyDuchCs : MonoBehaviour
         animator = GetComponent<Animator>();
         player = app.playermanager.player;
         sr = GetComponent<SpriteRenderer>();
-       
+        sr.material.SetVector("_EmissionColor", new Vector4(Normalcolor.r, Normalcolor.g, Normalcolor.b, 0f) * intesity);
 
     }
 
@@ -59,7 +48,7 @@ public class MainZelenyDuchCs : MonoBehaviour
         
         if (animator != null)
         {
-            sr.material.SetVector("_EmissionColor", new Vector4(NcolorR, NcolorG, NcolorB, 0f) * intesity);
+            sr.material.SetVector("_EmissionColor", new Vector4(Normalcolor.r, Normalcolor.g, Normalcolor.b, 0f) * intesity);
             animator.SetBool("Switch", false);
         }
        
@@ -68,7 +57,7 @@ public class MainZelenyDuchCs : MonoBehaviour
     {
         if (animator != null)
         {
-            sr.material.SetVector("_EmissionColor", new Vector4(CcolorR, CcolorG, CcolorB, 0f) * intesity);
+            sr.material.SetVector("_EmissionColor", new Vector4(Coruptedcolor.r, Coruptedcolor.g, Coruptedcolor.b, 0f) * intesity);
             animator.SetBool("Switch", true);
         }
     }

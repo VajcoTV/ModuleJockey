@@ -153,12 +153,8 @@ MonoBehaviour:
   HitPlayerDistance: 2
   Armor: 0
   DmgText: {fileID: 2649107345086785296, guid: 23664a453c900b54fb2b67f8f10470bd, type: 3}
-  NcolorR: 1
-  NcolorG: 0
-  NcolorB: 0
-  CcolorR: 0
-  CcolorG: 0
-  CcolorB: 1
+  Normalcolor: {r: 0, g: 0.03644681, b: 1, a: 0}
+  Coruptedcolor: {r: 1, g: 0, b: 0.7144089, a: 0}
   intesity: 4
 --- !u!136 &1988630929
 CapsuleCollider:

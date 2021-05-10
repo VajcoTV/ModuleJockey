@@ -1227,7 +1227,7 @@ PrefabInstance:
     - target: {fileID: 4611357280307361788, guid: 03e475da1ab4ebc4f9cd21820c37aa25,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 16.76
+      value: 14.75
       objectReference: {fileID: 0}
     - target: {fileID: 4611357280307361788, guid: 03e475da1ab4ebc4f9cd21820c37aa25,
         type: 3}
@@ -1278,6 +1278,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ZelenyDuch (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4611357280307361791, guid: 03e475da1ab4ebc4f9cd21820c37aa25,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4611357280307361791, guid: 03e475da1ab4ebc4f9cd21820c37aa25,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4611357280307361791, guid: 03e475da1ab4ebc4f9cd21820c37aa25,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03e475da1ab4ebc4f9cd21820c37aa25, type: 3}

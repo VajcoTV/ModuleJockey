@@ -6,6 +6,7 @@ public class MainZelenyDuchCs : MonoBehaviour
 {
     GameObject player;
     Animator animator;
+    SpriteRenderer sr;
     [Header("EnemyConfigs")]
     [SerializeField] int EnemyHealth = 10;
     [SerializeField] int DMG = 1;
@@ -14,7 +15,22 @@ public class MainZelenyDuchCs : MonoBehaviour
     [SerializeField] int Armor = 1;
     [Header("References")]
     public GameObject DmgText;
-    
+    [Header("Colors")]
+    [Range(0.0f, 1f)]
+    public float NcolorR;
+    [Range(0.0f, 1f)]
+    public float NcolorG;
+    [Range(0.0f, 1f)]
+    public float NcolorB;
+    [Range(0.0f, 1f)]
+    public float CcolorR;
+    [Range(0.0f, 1f)]
+    public float CcolorG;
+    [Range(0.0f, 1f)]
+    public float CcolorB;
+    public float intesity;
+
+
 
     void Start()
     {
@@ -28,6 +44,9 @@ public class MainZelenyDuchCs : MonoBehaviour
         //ziskavanie referencii
         animator = GetComponent<Animator>();
         player = app.playermanager.player;
+        sr = GetComponent<SpriteRenderer>();
+       
+
     }
 
     // Update is called once per frame
@@ -37,8 +56,10 @@ public class MainZelenyDuchCs : MonoBehaviour
     }
     void PlayerNormalDimensionSwitch()
     {
-        if(animator != null)
+        
+        if (animator != null)
         {
+            sr.material.SetVector("_EmissionColor", new Vector4(NcolorR, NcolorG, NcolorB, 0f) * intesity);
             animator.SetBool("Switch", false);
         }
        
@@ -47,6 +68,7 @@ public class MainZelenyDuchCs : MonoBehaviour
     {
         if (animator != null)
         {
+            sr.material.SetVector("_EmissionColor", new Vector4(CcolorR, CcolorG, CcolorB, 0f) * intesity);
             animator.SetBool("Switch", true);
         }
     }

@@ -25,13 +25,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9083210467958758586}
-  m_LocalRotation: {x: -0, y: -0, z: -0.009503253, w: 0.9999549}
+  m_LocalRotation: {x: 0, y: 0, z: -0.00950316, w: 0.9999549}
   m_LocalPosition: {x: -7.27, y: 85.9, z: -182.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1.0890001}
 --- !u!114 &9083210467958758584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47,7 +47,7 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 0, g: 0.007030964, b: 1, a: 1}
+  m_Color: {r: 0.064, g: 0.092, b: 0.823, a: 1}
   m_Intensity: 1
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 00000000
@@ -85,6 +85,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ff9fedaccb12684597e54df65ab4920, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Ncolor: {r: 0, g: 0.04445076, b: 1, a: 0}
+  Ncolor: {r: 0.064, g: 0.092, b: 0.823, a: 0}
   Ccolor: {r: 1, g: 0, b: 0.6698079, a: 0}
   SUN: {fileID: 0}

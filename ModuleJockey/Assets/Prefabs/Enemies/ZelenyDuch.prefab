@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b260acc36852d641a2f108a457749d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyHealth: 10000
+  EnemyHealth: 10
   DMG: 15
   PlayerDistance: 3
   HitPlayerDistance: 2
@@ -155,7 +155,7 @@ MonoBehaviour:
   DmgText: {fileID: 2649107345086785296, guid: 23664a453c900b54fb2b67f8f10470bd, type: 3}
   Normalcolor: {r: 0, g: 0.7490196, b: 0, a: 0}
   Coruptedcolor: {r: 0, g: 0.7490196, b: 0, a: 0}
-  intesity: 2.4
+  intesity: 2.6
 --- !u!136 &1988630929
 CapsuleCollider:
   m_ObjectHideFlags: 0

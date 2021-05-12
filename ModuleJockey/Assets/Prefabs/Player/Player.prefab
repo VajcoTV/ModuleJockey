@@ -84,7 +84,7 @@ MonoBehaviour:
   Knifedmg: 10
   armor: 5
   numberofenemy: 0
-  MaxNumberofenemy: 2
+  MaxNumberofenemy: 1
   noOfClicks: 0
   maxComboDelay: 1.2
   firePoint: {fileID: 2952317794491919179}
@@ -99,7 +99,7 @@ MonoBehaviour:
   jumpForce: 24
   terminalVelocity: 23
   Jumping: 0
-  Radius: 20
+  Radius: 18
   extremitiesOffset: 0.05
   innerVerticalOffset: 0.25
   distanceGrounded: 0.15

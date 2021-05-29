@@ -1,0 +1,1120 @@
+fileFormatVersion: 2
+guid: d040458743f277e49a57236e4c3df3ff
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5039710839349722159
+    second: Green_Ghost_0
+  - first:
+      213: -4005139661031263548
+    second: Green_Ghost_1
+  - first:
+      213: 267836728014765603
+    second: Green_Ghost_2
+  - first:
+      213: 1256052199595158446
+    second: Green_Ghost_3
+  - first:
+      213: 5592740159918065995
+    second: Green_Ghost_4
+  - first:
+      213: 5762061239279092396
+    second: Green_Ghost_5
+  - first:
+      213: 3408554454423023183
+    second: Green_Ghost_6
+  - first:
+      213: -4053508385477281342
+    second: Green_Ghost_7
+  - first:
+      213: 1158838738663628003
+    second: Green_Ghost_8
+  - first:
+      213: -6164325341626046744
+    second: Green_Ghost_9
+  - first:
+      213: 2857719683141194060
+    second: Green_Ghost_10
+  - first:
+      213: 3141280960778074801
+    second: Green_Ghost_11
+  - first:
+      213: 733744748884401862
+    second: Green_Ghost_12
+  - first:
+      213: -8973198731480306545
+    second: Green_Ghost_13
+  - first:
+      213: 1918613581536602633
+    second: Green_Ghost_14
+  - first:
+      213: 4766049048503167916
+    second: Green_Ghost_15
+  - first:
+      213: -2233903465007518352
+    second: Green_Ghost_16
+  - first:
+      213: -5375414697538102086
+    second: Green_Ghost_17
+  - first:
+      213: 8849859565753326540
+    second: Green_Ghost_18
+  - first:
+      213: 4810688945654007579
+    second: Green_Ghost_19
+  - first:
+      213: 1868784185224495203
+    second: Green_Ghost_20
+  - first:
+      213: -4255495007428074494
+    second: Green_Ghost_21
+  - first:
+      213: 7083921383433023591
+    second: Green_Ghost_22
+  - first:
+      213: -7694197335632047308
+    second: Green_Ghost_23
+  - first:
+      213: 8421617213746026792
+    second: Green_Ghost_24
+  - first:
+      213: -8918847101373794489
+    second: Green_Ghost_25
+  - first:
+      213: 4567874546645941966
+    second: Green_Ghost_26
+  - first:
+      213: 1172665088356072184
+    second: Green_Ghost_27
+  - first:
+      213: 6924448992320427623
+    second: Green_Ghost_28
+  - first:
+      213: 4541529273418495970
+    second: Green_Ghost_29
+  - first:
+      213: -8440642480816543051
+    second: Green_Ghost_30
+  - first:
+      213: 5804497331837223252
+    second: Green_Ghost_31
+  - first:
+      213: 4012908226053562066
+    second: Green_Ghost_32
+  - first:
+      213: -1684134215542030975
+    second: Green_Ghost_33
+  - first:
+      213: 3312581444421363647
+    second: Green_Ghost_34
+  - first:
+      213: -2545576813046078073
+    second: Green_Ghost_35
+  - first:
+      213: -2370611734337024950
+    second: Green_Ghost_36
+  - first:
+      213: 8473380233695847906
+    second: Green_Ghost_37
+  - first:
+      213: 7707086976628135598
+    second: Green_Ghost_38
+  - first:
+      213: 3301466680236164404
+    second: Green_Ghost_39
+  - first:
+      213: -4157047328240798316
+    second: Green_Ghost_40
+  - first:
+      213: -7573018724552888569
+    second: Green_Ghost_41
+  - first:
+      213: -2542303554153081949
+    second: Green_Ghost_42
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Green_Ghost_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4760
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d3cfd171b95f0ab0800000000000000
+      internalID: -5039710839349722159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Ghost_1
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 4760
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c2376cc2b2ea68c0800000000000000
+      internalID: -4005139661031263548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Ghost_2
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 4760
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32e7f17c51c87b300800000000000000
+      internalID: 267836728014765603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Ghost_3
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 4760
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaba73812d46e6110800000000000000
+      internalID: 1256052199595158446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Ghost_4
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 4760
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b494af83b876d9d40800000000000000
+      internalID: 5592740159918065995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Ghost_5
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 4760
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca2074d1b24f6ff40800000000000000
+      internalID: 5762061239279092396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Ghost_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4080
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4ea57d873e9d4f20800000000000000
+      internalID: 3408554454423023183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Ghost_7
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 4080
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c93f8d899b0fb7c0800000000000000
+      internalID: -4053508385477281342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Ghost_8
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 4080
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ecd10a61b5051010800000000000000
+      internalID: 1158838738663628003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Ghost_9
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 4080
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e6e07403cae37aa0800000000000000
+      internalID: -6164325341626046744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Ghost_10
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 4080
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c41d54539e8a8a720800000000000000
+      internalID: 2857719683141194060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Ghost_11
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 4080
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1baffdef362189b20800000000000000
+      internalID: 3141280960778074801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Ghost_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3400
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ce101926f8ce2a00800000000000000
+      internalID: 733744748884401862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Ghost_13
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 3400
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8c6127bb4bc87380800000000000000
+      internalID: -8973198731480306545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Ghost_14
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 3400
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90aaabc13e840aa10800000000000000
+      internalID: 1918613581536602633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Ghost_15
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 3400
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cabae16ab58642240800000000000000
+      internalID: 4766049048503167916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Ghost_16
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 3400
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07d66b162a49ff0e0800000000000000
+      internalID: -2233903465007518352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Ghost_17
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 3400
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abcd3d010d0b665b0800000000000000
+      internalID: -5375414697538102086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Ghost_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2720
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccbd1d0f26401da70800000000000000
+      internalID: 8849859565753326540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Ghost_19
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 2720
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b170b92ab1003c240800000000000000
+      internalID: 4810688945654007579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Ghost_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2040
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3608c22b0514fe910800000000000000
+      internalID: 1868784185224495203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Ghost_21
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 2040
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2042dca56d171f4c0800000000000000
+      internalID: -4255495007428074494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Ghost_22
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 2040
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 760b15c47f42f4260800000000000000
+      internalID: 7083921383433023591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Ghost_23
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 2040
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43315e1f948b83590800000000000000
+      internalID: -7694197335632047308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Ghost_24
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 2040
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82995ab7c389fd470800000000000000
+      internalID: 8421617213746026792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Ghost_25
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 2040
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 747b79cb0d3e93480800000000000000
+      internalID: -8918847101373794489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Ghost_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1360
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ece3163d2b9546f30800000000000000
+      internalID: 4567874546645941966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Ghost_27
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 1360
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fa37ff4fa4264010800000000000000
+      internalID: 1172665088356072184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Ghost_28
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 1360
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7661294dba5981060800000000000000
+      internalID: 6924448992320427623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Ghost_29
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 1360
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e7b527efc0c60f30800000000000000
+      internalID: 4541529273418495970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Ghost_30
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 1360
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5baabd65260dcda80800000000000000
+      internalID: -8440642480816543051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Ghost_31
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 1360
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4514cdbd197bd8050800000000000000
+      internalID: 5804497331837223252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Ghost_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 680
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de5a2235c6b0b730800000000000000
+      internalID: 4012908226053562066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Ghost_33
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 680
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18d39889ad0c0a8e0800000000000000
+      internalID: -1684134215542030975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Ghost_34
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 680
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb7294cd547a8fd20800000000000000
+      internalID: 3312581444421363647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Ghost_35
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 680
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 785eae5206b4cacd0800000000000000
+      internalID: -2545576813046078073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Ghost_36
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 680
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4c087a0035e91fd0800000000000000
+      internalID: -2370611734337024950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Ghost_37
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 680
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e5e14cbd6e779570800000000000000
+      internalID: 8473380233695847906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Ghost_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea695f675c215fa60800000000000000
+      internalID: 7707086976628135598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Ghost_39
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 0
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 435c349247a21dd20800000000000000
+      internalID: 3301466680236164404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Ghost_40
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 0
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49578bdda733f46c0800000000000000
+      internalID: -4157047328240798316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: 2715d4332ea2634429c94911f5c6dfea, type: 3}
+      name: _Emission
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

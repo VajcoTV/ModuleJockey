@@ -134,7 +134,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
-  m_Center: {x: 0.3, y: -2.32, z: 0}
+  m_Center: {x: -1.03, y: -2.32, z: 0}
 --- !u!114 &635218415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,7 +150,7 @@ MonoBehaviour:
   EnemyHealth: 10
   DMG: 15
   PlayerDistance: 3
-  HitPlayerDistance: 2
+  HitPlayerDistance: 3
   Armor: 0
   DmgText: {fileID: 2649107345086785296, guid: 23664a453c900b54fb2b67f8f10470bd, type: 3}
   Normalcolor: {r: 0, g: 0.7490196, b: 0, a: 0}
@@ -169,4 +169,4 @@ CapsuleCollider:
   m_Radius: 0.72
   m_Height: 4.06
   m_Direction: 1
-  m_Center: {x: 0, y: -0.43, z: 0}
+  m_Center: {x: -1.35, y: 0.77, z: 0}

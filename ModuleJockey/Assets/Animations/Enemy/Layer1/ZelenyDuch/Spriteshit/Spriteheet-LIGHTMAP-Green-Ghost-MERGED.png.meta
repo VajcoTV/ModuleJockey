@@ -1,0 +1,1280 @@
+fileFormatVersion: 2
+guid: 2715d4332ea2634429c94911f5c6dfea
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3968173623662035350
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_0
+  - first:
+      213: 2963126094723115394
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_1
+  - first:
+      213: -4311876584423622726
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_2
+  - first:
+      213: -8531555969861702370
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_3
+  - first:
+      213: -866538878167720769
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_4
+  - first:
+      213: -7154889643567847935
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_5
+  - first:
+      213: -1629558358161271437
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_6
+  - first:
+      213: 3654745348254084472
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_7
+  - first:
+      213: 6141542181572402728
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_8
+  - first:
+      213: 6844647331242267311
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_9
+  - first:
+      213: 6819684966667877969
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_10
+  - first:
+      213: -2687940999153599331
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_11
+  - first:
+      213: 6849564691229852044
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_12
+  - first:
+      213: -2383809016683191582
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_13
+  - first:
+      213: 1356764897544394857
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_14
+  - first:
+      213: 6748054440885374206
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_15
+  - first:
+      213: 8270031189024430969
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_16
+  - first:
+      213: 7842238833746026568
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_17
+  - first:
+      213: 8229240049348628936
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_18
+  - first:
+      213: 9182001402690230741
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_19
+  - first:
+      213: 8417263114727495945
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_20
+  - first:
+      213: 9060211458482724959
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_21
+  - first:
+      213: 6725291464671841715
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_22
+  - first:
+      213: 3088069194423914368
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_23
+  - first:
+      213: -765880087153601174
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_24
+  - first:
+      213: -2536789876460774851
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_25
+  - first:
+      213: -4424588078593820826
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_26
+  - first:
+      213: -7254394236443951518
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_27
+  - first:
+      213: 5597290259660133041
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_28
+  - first:
+      213: 373184940106256719
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_29
+  - first:
+      213: -236823503810136062
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_30
+  - first:
+      213: -2194769933393372843
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_31
+  - first:
+      213: 8817999168921301539
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_32
+  - first:
+      213: -8264984060363960093
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_33
+  - first:
+      213: -4056429454817874528
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_34
+  - first:
+      213: 8826395882736848594
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_35
+  - first:
+      213: -3717634478359945719
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_36
+  - first:
+      213: 5061171395842657363
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_37
+  - first:
+      213: 316911143070330438
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_38
+  - first:
+      213: 6655489133239795965
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_39
+  - first:
+      213: -4969203945390511466
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_40
+  - first:
+      213: 3611898982743235665
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_41
+  - first:
+      213: 9056650314966044884
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_42
+  - first:
+      213: -6120550274793965933
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_43
+  - first:
+      213: -5646822309218898043
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_44
+  - first:
+      213: 6662537865681964431
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_45
+  - first:
+      213: 5950997796454103915
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_46
+  - first:
+      213: -44414589806574142
+    second: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_47
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4760
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6ebc821d173ee8c0800000000000000
+      internalID: -3968173623662035350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_1
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 4760
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28969acdb732f1920800000000000000
+      internalID: 2963126094723115394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_2
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 4760
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab7fa1e77132924c0800000000000000
+      internalID: -4311876584423622726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_3
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 4760
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1da70b2c03d99980800000000000000
+      internalID: -8531555969861702370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_4
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 4760
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbc5fbe3b7f69f3f0800000000000000
+      internalID: -866538878167720769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_5
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 4760
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 106640407c9b4bc90800000000000000
+      internalID: -7154889643567847935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4080
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37557099e45a269e0800000000000000
+      internalID: -1629558358161271437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_7
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 4080
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87d2233d78348b230800000000000000
+      internalID: 3654745348254084472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_8
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 4080
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82e53b923142b3550800000000000000
+      internalID: 6141542181572402728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_9
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 4080
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa25587bb721dfe50800000000000000
+      internalID: 6844647331242267311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_10
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 4080
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15e7f4e485364ae50800000000000000
+      internalID: 6819684966667877969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_11
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 4080
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9cbd3017e382bad0800000000000000
+      internalID: -2687940999153599331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3400
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8140decbca8e0f50800000000000000
+      internalID: 6849564691229852044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_13
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 3400
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e2a93c44520beed0800000000000000
+      internalID: -2383809016683191582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_14
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 3400
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9685ad16c7234d210800000000000000
+      internalID: 1356764897544394857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_15
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 3400
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efc48f1e2c7e5ad50800000000000000
+      internalID: 6748054440885374206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_16
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 3400
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97bd337cc8d05c270800000000000000
+      internalID: 8270031189024430969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_17
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 3400
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 840a4395baa35dc60800000000000000
+      internalID: 7842238833746026568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2720
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c1d7d87932243270800000000000000
+      internalID: 8229240049348628936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_19
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 2720
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d95d7e90a50d6f70800000000000000
+      internalID: 9182001402690230741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_20
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 2720
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 909945ec43020d470800000000000000
+      internalID: 8417263114727495945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_21
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 2720
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5069c481565cbd70800000000000000
+      internalID: 9060211458482724959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_22
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 2720
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bd4bba74f8055d50800000000000000
+      internalID: 6725291464671841715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_23
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 2720
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08fc67f22960bda20800000000000000
+      internalID: 3088069194423914368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2040
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a651aa85e1c0f55f0800000000000000
+      internalID: -765880087153601174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_25
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 2040
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a9fbf3c038bccd0800000000000000
+      internalID: -2536789876460774851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_26
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 2040
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 667bcf1c594b892c0800000000000000
+      internalID: -4424588078593820826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_27
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 2040
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26efd1c90e6335b90800000000000000
+      internalID: -7254394236443951518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_28
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 2040
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b2dbcfd5d19dad40800000000000000
+      internalID: 5597290259660133041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_29
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 2040
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f411f8ec9b1dd2500800000000000000
+      internalID: 373184940106256719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1360
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 208feec2742a6bcf0800000000000000
+      internalID: -236823503810136062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_31
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 1360
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 559516cbf5c9a81e0800000000000000
+      internalID: -2194769933393372843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_32
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 1360
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3227e3d3683df5a70800000000000000
+      internalID: 8817999168921301539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_33
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 1360
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e09dbf69c0ec4d80800000000000000
+      internalID: -8264984060363960093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_34
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 1360
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ad262917eaa4b7c0800000000000000
+      internalID: -4056429454817874528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_35
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 1360
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de00858a48ad7a70800000000000000
+      internalID: 8826395882736848594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 680
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90e5c98832f486cc0800000000000000
+      internalID: -3717634478359945719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_37
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 680
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35cc19cb194ec3640800000000000000
+      internalID: 5061171395842657363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_38
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 680
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64ee11c6105e56400800000000000000
+      internalID: 316911143070330438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_39
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 680
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df00b39ba1c0d5c50800000000000000
+      internalID: 6655489133239795965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_40
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 680
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69a6782f657d90bb0800000000000000
+      internalID: -4969203945390511466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_41
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 680
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c5107fcfa002230800000000000000
+      internalID: 3611898982743235665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d01b7e2a7fafad70800000000000000
+      internalID: 9056650314966044884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_43
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 0
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3967cf004ff6f0ba0800000000000000
+      internalID: -6120550274793965933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_44
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 0
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58fa145270572a1b0800000000000000
+      internalID: -5646822309218898043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_45
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 0
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8d0092a3e6167c50800000000000000
+      internalID: 6662537865681964431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_46
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 0
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6b77c457f0369250800000000000000
+      internalID: 5950997796454103915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spriteheet-LIGHTMAP-Green-Ghost-MERGED_47
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 0
+        width: 680
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c50cb77a25326ff0800000000000000
+      internalID: -44414589806574142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -48,8 +48,12 @@ public class MainZelenyDuchCs : MonoBehaviour
         
         if (animator != null)
         {
+           
             sr.material.SetVector("_EmissionColor", new Vector4(Normalcolor.r, Normalcolor.g, Normalcolor.b, 0f) * intesity);
+
             animator.SetBool("Switch", false);
+            animator.SetTrigger("Flip");
+
         }
        
     }
@@ -59,6 +63,7 @@ public class MainZelenyDuchCs : MonoBehaviour
         {
             sr.material.SetVector("_EmissionColor", new Vector4(Coruptedcolor.r, Coruptedcolor.g, Coruptedcolor.b, 0f) * intesity);
             animator.SetBool("Switch", true);
+            animator.SetTrigger("Flip");
         }
     }
     //ak je zavolany event v tomto pripade player swingne a sme od neho v urcitej vzdialenosti odpal funkciu zober si dmg 

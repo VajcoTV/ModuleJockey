@@ -29,7 +29,7 @@ public class ZelenyDuchPatrol : StateMachineBehaviour
         if (newposition)
         {
             PatrolPos = player.GetComponent<Movement>().PlayerRadius(enemy.position.y);
-            Debug.Log("Yes Nova pozicia");
+            
             newposition = false;
         }
         else
@@ -44,7 +44,7 @@ public class ZelenyDuchPatrol : StateMachineBehaviour
         newpos = Vector3.MoveTowards(rb.position, PatrolPos, speed * Time.deltaTime);
         rb.MovePosition(newpos);
 
-        if (Vector3.Distance(player.transform.position, enemy.transform.position) < 1f)
+        if (Vector3.Distance(player.transform.position, enemy.transform.position) < 2f)
         {
             animator.SetTrigger("Attack");
         }

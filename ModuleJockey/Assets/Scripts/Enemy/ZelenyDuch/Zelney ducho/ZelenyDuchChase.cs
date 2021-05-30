@@ -23,7 +23,7 @@ public class ZelenyDuchChase : StateMachineBehaviour
         Vector3 target = new Vector3(player.position.x,player.position.y, player.position.z);
         Vector3 newpos = Vector3.MoveTowards(rb.position, target, speed * Time.deltaTime);
         rb.MovePosition(newpos);
-        if(Vector3.Distance(player.transform.position, enemy.transform.position) < 1f)
+        if(Vector3.Distance(player.transform.position, enemy.transform.position) < 2f)
         {
             animator.SetTrigger("Attack");
         }
